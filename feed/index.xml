@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" />
 	<link>https://git.czhang.uk/</link>
 	<description>I am Chris. Double Political Philosophy Graduate from the U.K., and Spain.</description>
-	<lastBuildDate>Wed, 01 Aug 2018 12:03:59 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 01 Aug 2018 13:00:37 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -25,5 +25,19 @@
 	<width>32</width>
 	<height>32</height>
 </image> 
-</channel>
+	<item>
+		<title>CV</title>
+		<link>https://git.czhang.uk/2018/08/01/cv/</link>
+		<comments>https://git.czhang.uk/2018/08/01/cv/#respond</comments>
+		<pubDate>Wed, 01 Aug 2018 12:56:31 +0000</pubDate>
+		<dc:creator><![CDATA[vpchris]]></dc:creator>
+				<category><![CDATA[Uncategorised]]></category>
+
+		<guid isPermaLink="false">https://git.czhang.uk/?p=39</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			<wfw:commentRss>https://git.czhang.uk/2018/08/01/cv/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
 </rss>
