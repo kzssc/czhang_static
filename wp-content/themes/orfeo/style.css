@@ -408,11 +408,12 @@ div, p, a, span, li, body {
   line-height: 36px;
   text-transform: none;
 }
-.footer-big .copyright {
+.footer-big {
   font-family: inherit;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
+	visibility:hidden
 }
 
 /*--------------------------------------------------------------
