@@ -61,66 +61,6 @@ if(typeof wpOnload=='function')wpOnload();
 	</div>
 
 	
-			<script>
-			(function (window) {
-
-				document.getElementById('obfx-accept-cookie-policy').addEventListener('click', function( e ) {
-					e.preventDefault();
-					var days = 365;
-					var date = new Date();
-					// @TODO add an option to select expiry days
-					date.setTime(date.getTime() + 24 * days * 60 * 60 * 1e3);
-
-					// save the cookie
-					document.cookie = 'obfx-policy-consent=accepted; expires=' + date.toGMTString() + '; path=/';
-
-					// after we get the acceptance cookie we can close the box
-					document.getElementById('obfx-checkbox-cb').checked = true;
-
-				}, false);
-
-			})(window);
-		</script>		<style>
-			.obfx-cookie-bar-container {
-				height: 0;
-			}
-			
-			.obfx-checkbox-cb {
-				display: none;
-			}
-
-			.obfx-cookie-bar {
-				padding: 12px 25px;
-				position: fixed;
-				z-index: 9999;
-				text-align: center;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				display: block;
-				min-height: 40px;
-				background: #fff;
-				border: 1px solid #333;
-			}
-
-			.obfx-cookie-bar a {
-				padding: 0 8px;
-				text-decoration: underline;
-				font-weight: bold;
-			}
-
-			.obfx-checkbox-cb:checked + .obfx-cookie-bar {
-				display: none;
-			}
-
-			.obfx-close-cb {
-				position: absolute;
-				right: 5px;
-				top: 12px;
-				width: 20px;
-				cursor: pointer;
-			}
-		</style>
 		<div class="clear"></div>
 	</body>
 	</html>
