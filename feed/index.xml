@@ -11,12 +11,20 @@
 	<title>Sisheng Chris Zhang</title>
 	<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" />
 	<link>/https://kzssc.github.io/czhang/</link>
-	<description>Just another WordPress site</description>
+	<description>I am Chris. Double Political Philosophy Graduate from the U.K., and Spain.</description>
 	<lastBuildDate>Wed, 01 Aug 2018 10:42:53 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.7</generator>
+
+<image>
+	<url>/https://kzssc.github.io/czhang/wp-content/uploads/2018/08/cropped-Logo-cut-1-32x32.jpg</url>
+	<title>Sisheng Chris Zhang</title>
+	<link>/https://kzssc.github.io/czhang/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>Hello world!</title>
 		<link>/https://kzssc.github.io/czhang/2018/08/01/hello-world/</link>

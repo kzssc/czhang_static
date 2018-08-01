@@ -12,7 +12,11 @@
 <link rel='stylesheet' href='/https://kzssc.github.io/czhang/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5B%5D=dashicons,buttons,forms,l10n,login&amp;ver=4.9.7' type='text/css' media='all' />
 <meta name='robots' content='noindex,follow' />
 	<meta name="viewport" content="width=device-width" />
-		</head>
+	<link rel="icon" href="/https://kzssc.github.io/czhang/wp-content/uploads/2018/08/cropped-Logo-cut-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="/https://kzssc.github.io/czhang/wp-content/uploads/2018/08/cropped-Logo-cut-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="/https://kzssc.github.io/czhang/wp-content/uploads/2018/08/cropped-Logo-cut-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2018/08/cropped-Logo-cut-1-270x270.jpg" />
+	</head>
 	<body class="login login-action-login wp-core-ui  locale-en-gb">
 		<div id="login">
 		<h1><a href="https://wordpress.org/" title="Powered by WordPress" tabindex="-1">Powered by WordPress</a></h1>
