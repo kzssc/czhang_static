@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
-	<meta charset='UTF-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-				<!-- Google Analytics -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-			function gtag() {
-				dataLayer.push( arguments );
-			}
+        <script>
+        (function (exports, d) {
 
-			gtag( 'js', new Date() );
+            var _isReady = false,
+                _event,
+                _fns = [];
 
-			gtag( 'config', '' );
-		</script>
-		<!-- End Google Analytics -->
-		<title>Sisheng Chris Zhang &#8211; 张斯盛</title>
-<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, event);
+                });
+
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+
+                if (window.jQuery) {
+                    jQuery(fn);
+                }
+
+                if (_isReady) {
+                    fn.call(context || exports, _event);
+                }
+
+                _fns.push([fn, context || exports]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>Sisheng Chris Zhang &#8211; 张斯盛</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Feed" href="https://git.czhang.uk/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Comments Feed" href="https://git.czhang.uk/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Feed" href="https://sishengzhang.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Comments Feed" href="https://sishengzhang.com/comments/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/git.czhang.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sishengzhang.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
 img.wp-smiley,
@@ -44,511 +79,261 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='hestia-clients-bar-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/companion-legacy/assets/css/hestia/clients-bar.css?ver=4.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-social-sharing-module-0-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/css/public.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-social-sharing-module-1-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/css/vendor/socicon/socicon.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='https://git.czhang.uk/wp-includes/css/dashicons.min.css?ver=4.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-menu-icons-0-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-menu-icons-1-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/menu-icons/css/public.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css?ver=1.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='orfeo_parent-css'  href='https://git.czhang.uk/wp-content/themes/hestia/style.css?ver=1.0.5' type='text/css' media='all' />
-<style id='orfeo_parent-inline-css' type='text/css'>
-.hestia-pricing .hestia-table-one .card-pricing .category { color: #f5593d; }.hestia-pricing .hestia-table-two .card-pricing { background-color: #f5593d; }.pagination .nav-links .page-numbers { color: #f5593d; border-color: #f5593d; }.pagination .nav-links .page-numbers.current { border-color: #f5593d; }.pagination .nav-links .page-numbers:hover { background-color: #f5593d; }.pagination .nav-links .page-numbers:hover { border-color: #f5593d; }.woocommerce-pagination ul.page-numbers .page-numbers { color: #f5593d; border-color: #f5593d; } .woocommerce-pagination ul.page-numbers li > span.current { border-color: #f5593d !important; }.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: #f5593d; }.woocommerce-pagination ul.page-numbers .page-numbers:hover { border-color: #f5593d; }.entry-categories .label { background-color: #f5593d;}.woocommerce .star-rating { color: #f5593d; }.woocommerce div.product p.stars span a:before { color: #f5593d; }.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: #f5593d; }.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: #f5593d; }.woocommerce-page .woocommerce-message { background-color: #f5593d; }.track_order input[type=submit] { background-color: #f5593d; }.track_order input[type=submit]:hover { background-color: #f5593d; }div[id^=woocommerce_product_tag_cloud].widget a { background-color: #f5593d; }.woocommerce.widget_shopping_cart .buttons > a.button { background-color: #f5593d; }.woocommerce.widget_shopping_cart .buttons > a.button:hover { background-color: #f5593d; }
+<link rel='stylesheet' id='companion-bundle-css'   data-href='https://sishengzhang.com/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/css/companion.bundle.min.css?ver=1.6.90' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://sishengzhang.com/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.14-6684' type='text/css' media='screen' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://sishengzhang.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/style.min.css?ver=1.5.52' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.mesmerize-front-page .header-separator .svg-white-bg{fill:#ffffff!important;}.mesmerize-front-page .header-separator path.svg-accent{stroke:#FF9800!important;}.mesmerize-front-page .header-separator svg{height:154px!important;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
 </style>
-<link rel='stylesheet' id='hestia-font-sizes-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/css/font-sizes.css?ver=1.1.85' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/font-awesome/css/font-awesome.min.css?ver=1.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='hestia_style-css'  href='https://git.czhang.uk/wp-content/themes/orfeo/style.css?ver=1.1.85' type='text/css' media='all' />
-<style id='hestia_style-inline-css' type='text/css'>
-.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
-			background-color: #363537
-		}
-		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
-			-webkit-box-shadow: inset 0 0 0px 9999px #363537
-		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
-			color: #ffffff
-		} 
-		.hestia-top-bar .widget .label-floating input[type=search]{
-			-webkit-text-fill-color:#ffffff !important 
-		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
-			color: #ffffff
-		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
-			color: #eeeeee
-		}
-	
-		a, 
-		.navbar .dropdown-menu li:hover > a,
-		.navbar .dropdown-menu li:focus > a,
-		.navbar .dropdown-menu li:active > a,
-		.navbar.navbar-not-transparent .nav > li:not(.btn).on-section > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn) > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):hover > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):focus > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):active > a, 
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
-		a:hover, 
-		.card-blog a.moretag:hover, 
-		.card-blog a.more-link:hover, 
-		.widget a:hover {
-		    color:#f5593d;
-		}
-		
-		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
-			border-color:#f5593d
-		}
-		
-		button,
-		button:hover,           
-		input[type="button"],
-		input[type="button"]:hover,
-		input[type="submit"],
-		input[type="submit"]:hover,
-		input#searchsubmit, 
-		.pagination span.current, 
-		.pagination span.current:focus, 
-		.pagination span.current:hover,
-		.btn.btn-primary,
-		.btn.btn-primary:link,
-		.btn.btn-primary:hover, 
-		.btn.btn-primary:focus, 
-		.btn.btn-primary:active, 
-		.btn.btn-primary.active, 
-		.btn.btn-primary.active:focus, 
-		.btn.btn-primary.active:hover,
-		.btn.btn-primary:active:hover, 
-		.btn.btn-primary:active:focus, 
-		.btn.btn-primary:active:hover,
-		.hestia-sidebar-open.btn.btn-rose,
-		.hestia-sidebar-close.btn.btn-rose,
-		.hestia-sidebar-open.btn.btn-rose:hover,
-		.hestia-sidebar-close.btn.btn-rose:hover,
-		.hestia-sidebar-open.btn.btn-rose:focus,
-		.hestia-sidebar-close.btn.btn-rose:focus,
-		.label.label-primary,
-		.hestia-work .portfolio-item:nth-child(6n+1) .label,
-		.nav-cart .nav-cart-content .widget .buttons .button{
-		    background-color: #f5593d;
-		}
-		
-		@media (max-width: 768px) { 
-	
-			.navbar-default .navbar-nav>li>a:hover,
-			.navbar-default .navbar-nav>li>a:focus,
-			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
-			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
-			.navbar button.navbar-toggle:hover,
-			.navbar .navbar-nav li:hover > a i {
-			    color: #f5593d;
-			}
-		}
-		
-		button,
-		.button,
-		input[type="submit"], 
-		input[type="button"], 
-		.btn.btn-primary,
-		.hestia-sidebar-open.btn.btn-rose,
-		.hestia-sidebar-close.btn.btn-rose {
-		    -webkit-box-shadow: 0 2px 2px 0 rgba(245,89,61,0.14),0 3px 1px -2px rgba(245,89,61,0.2),0 1px 5px 0 rgba(245,89,61,0.12);
-		    box-shadow: 0 2px 2px 0 rgba(245,89,61,0.14),0 3px 1px -2px rgba(245,89,61,0.2),0 1px 5px 0 rgba(245,89,61,0.12);
-		}
-		
-		.card .header-primary, .card .content-primary {
-		    background: #f5593d;
-		}
-		
-		.button:hover,
-		button:hover,
-		input[type="submit"]:hover,
-		input[type="button"]:hover,
-		input#searchsubmit:hover, 
-		.pagination span.current, 
-		.btn.btn-primary:hover, 
-		.btn.btn-primary:focus, 
-		.btn.btn-primary:active, 
-		.btn.btn-primary.active, 
-		.btn.btn-primary:active:focus, 
-		.btn.btn-primary:active:hover, 
-		.hestia-sidebar-open.btn.btn-rose:hover,
-		.hestia-sidebar-close.btn.btn-rose:hover,
-		.pagination span.current:hover{
-			-webkit-box-shadow: 0 14px 26px -12pxrgba(245,89,61,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(245,89,61,0.2);
-		    box-shadow: 0 14px 26px -12px rgba(245,89,61,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(245,89,61,0.2);
-			color: #fff;
-		}
-		
-		.form-group.is-focused .form-control {
-		background-image: -webkit-gradient(linear,left top, left bottom,from(#f5593d),to(#f5593d)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
-			background-image: -webkit-linear-gradient(#f5593d),to(#f5593d),-webkit-linear-gradient(#d2d2d2,#d2d2d2);
-			background-image: linear-gradient(#f5593d),to(#f5593d),linear-gradient(#d2d2d2,#d2d2d2);
-		}
-		
-		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
-		 .navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
-		 .navbar.full-screen-menu .navbar-toggle:hover,
-		 .navbar:not(.navbar-transparent) .nav-cart:hover, 
-		 .navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
-				 color:#f5593d}
-		
-		.header-filter-gradient { 
-			background: linear-gradient(45deg, rgba(81,188,218,1) 0%, rgb(147,216,197) 100%); 
-		} 
-h1, h2, h3, h4, h5, h6, .hestia-title, .hestia-title.title-in-content, p.meta-in-content , .info-title, .card-title,
-		.page-header.header-small .hestia-title, .page-header.header-small .title, .widget h5, .hestia-title, 
-		.title, .card-title, .info-title, .footer-brand, .footer-big h4, .footer-big h5, .media .media-heading, 
-		.carousel h1.hestia-title, .carousel h2.title, 
-		.carousel span.sub-title, .woocommerce.single-product h1.product_title, .woocommerce section.related.products h2, .hestia-about h1, .hestia-about h2, .hestia-about h3, .hestia-about h4, .hestia-about h5 {
-			font-family: Montserrat;
-		}
-		body, ul, .tooltip-inner {
-			font-family: Montserrat;
-		}
-@media (min-width: 769px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 42px;
-			}}@media (max-width: 768px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 36px;
-			}}@media (max-width: 480px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 36px;
-			}}@media (min-width: 769px){#carousel-hestia-generic .hestia-title{
-		font-size: 54px;
-		}#carousel-hestia-generic span.sub-title{
-		font-size: 19px;
-		}#carousel-hestia-generic .btn{
-		font-size: 15px;
-		}}
-
-			.home.blog .hestia-blogs {
-				background-color: #fff !important;
-			}
-		
-			.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
-			.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
-				margin-left: auto;
-				margin-right: auto;
-			}
-		
-			.btn,
-			button,
-			.button {
-				box-shadow: none !important;
-			}
-			
-			.btn:hover,
-			button:hover,
-			.button:hover {
-				opacity: 0.75;
-			}
-		
-			.carousel .buttons .btn-primary + .btn-right {
-				margin-left: 15px;
-			}		
-			.carousel .buttons .btn,
-			.carousel .buttons .btn-right {
-				margin: 15px;
-			}
-		
-			.carousel .hestia-big-title-content .hestia-title {
-				font-weight: 800;
-			}
-			.carousel .hestia-big-title-content .sub-title {
-				font-family: inherit;
-				font-size: 19px;
-				font-weight: 300;
-				line-height: 26px;
-				margin: 0 0 8px;
-			}
-			.carousel .hestia-big-title-content .buttons .btn,
-			.carousel .hestia-big-title-content .buttons .btn-right {
-				border-radius: 30px;
-				font-family: inherit;
-				font-size: 14px;
-				font-weight: 600;
-				line-height: 24px;
-				padding: 11px 30px;
-			}
-			.carousel .hestia-big-title-content .buttons .btn-right {
-				background-color: transparent;
-				border: 2px solid #fff;
-				padding: 9px 28px;
-			}
-		
-
-		.page-template-builder-fullwidth-std .header > .elementor {
-			padding-top: 70px;
-		}
-
-</style>
-<link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=1.1.85' type='text/css' media='all' />
-<link rel='stylesheet' id='hestia-google-font-montserrat-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C700&#038;subset=latin&#038;ver=4.9.7' type='text/css' media='all' />
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.5.52' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript'>
-/* <![CDATA[ */
-var pf = {"spam":{"label":"I'm human!","value":"d44340866f"}};
-/* ]]> */
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                var headerTop = document.querySelector('.header-top');
+                document
+                    .querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage')
+                    .forEach(function (item) {
+                        item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                    });
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+
+        })();
+    
+    
 </script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/plugins/pirate-forms/public/js/custom-spam.js?ver=4.9.7'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/js/public.js?ver=2.5.6'></script>
-<link rel='https://api.w.org/' href='https://git.czhang.uk/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://git.czhang.uk/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://git.czhang.uk/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.7" />
-<link rel="canonical" href="https://git.czhang.uk/" />
-<link rel='shortlink' href='https://git.czhang.uk/' />
-<link rel="alternate" type="application/json+oembed" href="https://git.czhang.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgit.czhang.uk%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://git.czhang.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgit.czhang.uk%2F&#038;format=xml" />
-		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<link rel="icon" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-180x180.jpg" />
-<meta name="msapplication-TileImage" content="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-270x270.jpg" />
-</head>
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://sishengzhang.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sishengzhang.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sishengzhang.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel="canonical" href="https://sishengzhang.com/" />
+<link rel='shortlink' href='https://sishengzhang.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://sishengzhang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsishengzhang.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sishengzhang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsishengzhang.com%2F&#038;format=xml" />
+        <style data-name="overlap">
+            @media only screen and (min-width: 768px) {
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .header-homepage {
+                    padding-bottom: 95px;
+                }
 
-<body class="home page-template-default page page-id-28 wp-custom-logo blog-post">
-	<div class="wrapper">
-		<header class="header">
-					<nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent hestia_left">
-						<div class="container">
-				<div class="navbar-header">
-					<div class="title-logo-wrapper">
-						<a class="navbar-brand" href="https://git.czhang.uk/"
-								title="Sisheng Chris Zhang">
-							<img src="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-Original.png" alt="Sisheng Chris Zhang"></a>
-					</div>
-				</div>
-				<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-main" class="nav navbar-nav navbar-right"><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-35 active"><a title="Sisheng Chris Zhang" href="https://git.czhang.uk/">Sisheng Chris Zhang</a></li>
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .content {
+                    position: relative;
+                    z-index: 10;
+                }
 
-		<li class="hestia-search-in-menu">
-			<form role="search" method="get" class="hestia-search-in-nav" action="https://git.czhang.uk/">
-				<div class="hestia-nav-search">
-					<span class="screen-reader-text">Search for:</span>
-					<span class="search-field-wrapper">
-					
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-					</span>
-					<span class="search-submit-wrapper">
-					<button type="submit" class="search-submit hestia-search-submit" ><i class="fa fa-search"></i></button>
-					</span>
-				</div>
-			</form>
-			<div class="hestia-toggle-search">
-				<i class="fa fa-search"></i>
-			</div>
-		</li></ul></div>					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="sr-only">Toggle Navigation</span>
-					</button>
-								</div>
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:first-of-type {
+                    margin-top: -95px;
+                    background: transparent !important;
+                    position: relative;
+                }
 
-					</nav>
-		<div style="display: none"></div>		</header>
-		<div id="carousel-hestia-generic" class="carousel slide" data-ride="carousel">
-			<div class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					
-		<div class="item active">
-			<div class="page-header">
-				
-				<div class="container">
-										<div class="row hestia-big-title-content">
-								<div class="big-title-slider-content text-center col-sm-8 col-sm-offset-2">
-							<h1 class="hestia-title">Sisheng Chris Zhang</h1>
-										<span class="sub-title">A half-baked philosopher who enjoys travelling, photography, great food (cooking and eating), great whisky and gin, playing badminton, almost-all-kinds-of music, and technology.</span>
-										<div class="buttons">
-					<a href="mailto:admin@czhang.uk"
-							title="Get in touch"
-							class="btn btn-primary btn-lg" >Get in touch</a>
-							<a href="http://doodle.com/chriszhang" title="Appointment" class="btn btn-right btn-lg"  target="_blank">Appointment</a>
-						</div>
-					</div>
-							</div>
-									</div><!-- /.container -->
+                .page-template:not(.mesmerize-front-page-with-slider) [data-overlap="true"]:first-of-type {
+                    padding-top: 0;
+                }
+            }
+        </style>
+        
+        <script type="text/javascript" data-name="async-styles">
+        (function () {
+            document.querySelectorAll('link[data-href]').forEach(function (item) {
+                item.href = item.getAttribute('data-href')
+            });
+        })()
 
-				<div class="header-filter"
-					style="background-image: url(https://git.czhang.uk/wp-content/themes/orfeo/assets/img/header.jpg)"				></div><!-- /.header-filter -->
-							</div><!-- /.page-header -->
-		</div>
-						</div>
-			</div>
-		</div>
-			<div class="main  main-raised">
-				<section class="hestia-features" id="features" data-sorder="hestia_features">
-						<div class="container">
-									<div class="row">
-						<div class="col-md-8 col-md-offset-2 hestia-features-title-area">
-							<h2 class="hestia-title">Curriculum Vitae / Resume</h2><h5 class="description">Please click the icon(s) 请点击图标获取</h5>						</div>
-					</div>
-							<div class="hestia-features-content">
-		<div class="row">				<div class="col-xs-12 col-md-4 feature-box">
-					<div class="hestia-info">
-						<a href="https://git.czhang.uk/wp-content/uploads/2018/08/Sisheng-Zhang-Universitat-Pompeu-Fabra-Political-Philosophy.pdf">									<div class="icon" style="color:#dd3333">
-				<i class="fa fa-user"></i>
-										</div>
-																									<h4 class="info-title">CV</h4>
-																				</a>
-															<p>英文简历</p>
-											</div>
-				</div>
-								<div class="col-xs-12 col-md-4 feature-box">
-					<div class="hestia-info">
-						<a href="https://git.czhang.uk/wp-content/uploads/2018/08/CV华威-庞培法布拉-政治哲学-张斯盛.pdf">									<div class="icon" style="color:#dd9933">
-				<i class="fa fa-user"></i>
-										</div>
-																									<h4 class="info-title">简历</h4>
-																				</a>
-															<p>CV in Chinese</p>
-											</div>
-				</div>
-								<div class="col-xs-12 col-md-4 feature-box">
-					<div class="hestia-info">
-						<a href="https://git.czhang.uk/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-Academic-Curriculum-Vitae.pdf">									<div class="icon" style="color:#eeee22">
-				<i class="fa fa-graduation-cap"></i>
-										</div>
-																									<h4 class="info-title">Academic CV</h4>
-																				</a>
-															<p>英语学术CV</p>
-											</div>
-				</div>
-								<div class="col-xs-12 col-md-4 feature-box">
-					<div class="hestia-info">
-						<a href="https://git.czhang.uk/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-Reference.pdf">									<div class="icon" style="color:#1e73be">
-				<i class="fa fa-rocket"></i>
-										</div>
-																									<h4 class="info-title">Referee Information</h4>
-																				</a>
-															<p>推荐人信息</p>
-											</div>
-				</div>
-								<div class="col-xs-12 col-md-4 feature-box">
-					<div class="hestia-info">
-						<a href="https://git.czhang.uk/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-MUN-Resume.pdf">									<div class="icon" style="color:#81d742">
-				<i class="fa fa-child"></i>
-										</div>
-																									<h4 class="info-title">Model UN Resume</h4>
-																				</a>
-															<p>模联简历</p>
-											</div>
-				</div>
-				</div>		</div>
-									</div>
-					</section>
-					<section class="hestia-about section-image" id="about" data-sorder="hestia_about" style="background-image: url('https://git.czhang.uk/wp-content/uploads/2018/08/Logo-Original.png');">
-								<div class="container">
-					<div class="row hestia-about-content">
-						<p style="text-align: center"><strong>Double MA Political Philosophy and Legal Theory Graduate at the Universities of Warwick and Pompeu Fabra. </strong></p>
-<p style="text-align: center">Personal Sites: <a href="http://www.vpchris.com/">Vpchris.com</a> | <a href="http://www.czhang.uk/">CZhang.uk</a> | <a href="http://sishengzhang.com/">SishengZhang.com</a></p>
-<p style="text-align: center">Also manages: <a href="http://www.cliffordalumni.ocm/">cliffordalumni.com</a> | <a href="http://www.essexmun.com/">essexmun.com</a></p>
-<p style="text-align: center">Birmingham, United Kingdom | Barcelona, Spain | <strong>Guangzhou, China</strong></p>
-<p style="text-align: center">chris (at) vpchris.com</p>
-					</div>
-				</div>
-			</section>
-					<section class="hestia-blogs" id="blog"
-			data-sorder="hestia_blog" >
-						<div class="container">
-									<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center hestia-blogs-title-area">
-							<h2 class="hestia-title">Blog</h2><h5 class="description">My updates.</h5>						</div>
-					</div>
-									<div class="hestia-blog-content">
-				<div class="row" >			<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
-				<div class="card card-plain card-blog">
-										<div class="content">
-						<h6 class="category"><a href="https://git.czhang.uk/category/faq/" title="View all posts in FAQ" >FAQ</a> </h6>
-						<h4 class="card-title">
-							<a class="blog-item-title-link" href="https://git.czhang.uk/2018/08/01/general-questions/" title="General Questions" rel="bookmark">
-								General Questions							</a>
-						</h4>
-						<p class="card-description">Where are you now?Barcelona, Spain What are you doing in BCN?Second half of my double Master’s. What then, after the double Master’s?I’m currently applying for my PhD, I hope to go back to the UK,<a class="moretag" href="https://git.czhang.uk/2018/08/01/general-questions/"> Read more&hellip;</a></p>
-					</div>
-				</div>
-				</article>
-							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
-				<div class="card card-plain card-blog">
-										<div class="content">
-						<h6 class="category"><a href="https://git.czhang.uk/category/faq/" title="View all posts in FAQ" >FAQ</a> </h6>
-						<h4 class="card-title">
-							<a class="blog-item-title-link" href="https://git.czhang.uk/2018/08/01/mun/" title="MUN" rel="bookmark">
-								MUN							</a>
-						</h4>
-						<p class="card-description">Where did the MUN section on your website go?As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can<a class="moretag" href="https://git.czhang.uk/2018/08/01/mun/"> Read more&hellip;</a></p>
-					</div>
-				</div>
-				</article>
-							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
-				<div class="card card-plain card-blog">
-										<div class="content">
-						<h6 class="category"><a href="https://git.czhang.uk/category/travelling/" title="View all posts in Travelling" >Travelling</a> </h6>
-						<h4 class="card-title">
-							<a class="blog-item-title-link" href="https://git.czhang.uk/2018/08/01/rough-guide-for-lisbon-and-porto/" title="Rough Guide for Lisbon and Porto" rel="bookmark">
-								Rough Guide for Lisbon and Porto							</a>
-						</h4>
-						<p class="card-description">Luuukie and Seda: Here’s my personal recommendation for stuff to do in Lisboa y Porto. Don’t take this list exclusively, I’ve only listed the places that I feel like you should go, but definitely take<a class="moretag" href="https://git.czhang.uk/2018/08/01/rough-guide-for-lisbon-and-porto/"> Read more&hellip;</a></p>
-					</div>
-				</div>
-				</article>
-				</div><!-- /.row --><div class="row" ></div>				</div>
-							</div>
-					</section>
-				</div>
+
+    </script>
+    <link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-270x270.jpg" />
+    <style id="page-content-custom-styles">
+            </style>
+        <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #F5FAFD;
+        }
+    </style>
+    </head>
+
+<body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-17 wp-custom-logo mesmerize-front-page mesmerize-content-no-padding">
+
+
+<div id="page-top" class="header-top homepage">
+        <div class="navigation-bar bordered homepage"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-33"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-35"><a href="https://sishengzhang.com/#contact-1">Contact</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-33"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-35"><a href="https://sishengzhang.com/#contact-1">Contact</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+
+<div id="page" class="site">
+
+            <div class="header-wrapper">
+            <div  class='header-homepage  color-overlay  plum_plate' style=''>
+                                                
+    <div class="header-description gridContainer content-on-center">
+        <div class="row header-description-row middle-sm">
+    <div class="header-content header-content-centered col-md col-xs-12">
+        <div class="align-holder center">
+            <h1 class="hero-title">Sisheng Chris Zhang</h1><p class="header-subtitle">A half-baked philosopher who enjoys travelling, photography, great food (cooking and eating), great whisky and gin, playing badminton, almost-all-kinds-of music, and technology.</p><div data-dynamic-mod-container class="header-buttons-wrapper"><a class="button big color1 round" target="_blank" href="mailto:chris@sishengzhang.com" >Get in Touch</a><a class="button big color-white round outline customize-unpreviewable" target="_blank" href="http://doodle.com/chriszhang" >Book an Appointment</a></div>        </div>
+    </div>
+</div>
+    </div>
+    
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                    
+                <div class="header-separator header-separator-bottom"><svg class="mesmerize" preserveaspectratio="none" width="1000" height="100" viewbox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+
+    <g fill="none">
+        <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000"/>
+        <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1"/>
+    </g>
+</svg></div>                            </div>
+        </div>
+        
+<div class="page-content">
+  <div class="content">
+   <div  id="about-1" style="background-color: #f5fafd;" data-label="About" data-id="about-1" data-export-id="about-1" data-category="about" class="about-1 content-section content-section-spacing"><div  class="gridContainer"> <div  class="row text-center"><div  class="section-title-col" data-type="column">  <h2  class="">Hi there, welcome to my website.</h2> <p  class="lead">+44 | +34&nbsp; | +86&nbsp;</p> </div> </div> <div  class="row"> <div  class="col-xs bottom-xs flexbox image-group-bottom-3-img space-bottom-xs center-xs"> <img  class="left-img shadow-large-black" data-size="500x300" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-original_N3ry_484d0000d1271190-1.jpg" alt="" title="cropped-original_N3ry_484d0000d1271190-1.jpg"> <img  class="center-img shadow-large-black" data-size="500x300" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-IMG_9536-4.jpg" alt="" title="cropped-IMG_9536-4.jpg"> <img  class="right-img shadow-large-black" data-size="500x300" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-IMG_8505.jpg" alt="" title="cropped-IMG_8505.jpg"></div> </div></div> </div><div  id="cv" style="background-color: #f5fafd;" data-label="CV" data-id="content-2" data-export-id="content-2" data-category="content" class="content-2 content-section content-section-spacing"><div > <div  class="row middle-xs"><div  class="col-sm-5 bg-image shadow-large-black" data-bg="image" style="background-image: url(https://sishengzhang.com/wp-content/uploads/2018/08/cropped-SishengZhang.png);"></div> <div  class="col-sm-7 full-col-left-padding full-col-right-padding"> <div  class="row"> <div  data-type="column" class="space-bottom-small content-title-col"> <h5  class="">Curriculum Vitae | References
+<br >个人简历 | 推荐信</h5> <h2  class="">English</h2> <a  class="link" href="https://sishengzhang.com/wp-content/uploads/2018/08/Sisheng-Zhang-Universitat-Pompeu-Fabra-Political-Philosophy.pdf" target="_blank" data-cp-link="1">英文简历 Here</a></div> </div> <div  class="row spaced-cols" data-type="row"> <div  class="col-xs-6" data-type="column"> <h5  class="">Chinese</h5> <a  class="link" href="https://sishengzhang.com/wp-content/uploads/2018/08/CV华威-庞培法布拉-政治哲学-张斯盛.pdf" target="_self" data-cp-link="1">中文简历 Here</a></div> <div  class="col-xs-6" data-type="column"><h5  class="">Academic</h5> <a  class="link" href="https://sishengzhang.com/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-Academic-Curriculum-Vitae.pdf" target="_blank" data-cp-link="1">学术简历 Here</a></div> <div  class="col-xs-6" data-type="column"><h5  class="">Model United Nations</h5> <a  class="link" href="https://sishengzhang.com/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-MUN-Resume.pdf" target="_blank" data-cp-link="1">模拟联合国简历 Here</a></div> <div  class="col-xs-6" data-type="column"><h5  class="">Referee</h5> <a  class="link" href="https://sishengzhang.com/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-Reference.pdf" target="_blank" data-cp-link="1">推荐人信息 Here</a></div> </div></div> </div></div> </div><div  id="latest-news-1" style="background-color: #f5fafd;" data-label="Latest-news" data-id="blog-section" data-export-id="blog-section" data-category="latest_news" class="blog-section content-section content-section-spacing"><div  class="gridContainer"> <div  class="row"><div  data-type="column" class="section-title-col"> <h2  class="">Latest News 最新动态</h2> </div> </div> <div  class="row"> <div  data-type="row" data-dynamic-columns="handled" data-content-shortcode="mesmerize_latest_news">        <div class="row center-sm content-left-sm">
+                    <div id="post-83" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/" class="post-list-item-thumb">
+            <img width="318" height="159" src="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-2.png 318w, https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-2-300x150.png 300w" sizes="(max-width: 318px) 100vw, 318px" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/" rel="bookmark">
+                                What Distributive Principle Should Guide State Support for Education?                            </a>
+                        </h3>
+                        <p>Abstract Sufficientarians believe that every citizen in a society should receive an adequate level of education. Educational adequacy, for sufficientarians is capped at the school level. It has attracted much[&hellip;]</p>
+                        <a class="read-more" href="https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/">
+                            <span data-theme="latest_news_read_more">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div id="post-80" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/" class="post-list-item-thumb">
+            <img width="225" height="225" src="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-1.png 225w, https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-1-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/" rel="bookmark">
+                                To What Extent Does a Nation Require a State?                            </a>
+                        </h3>
+                        <p>Module Essay 31439 &#8211; Nationalism Today Dr Klaus-Jürgen Nagel Sisheng Chris Zhang, Universitat Pompeu Fabra MA Political Philosophy Introduction For David Miller, nations and state are necessary to each others’[&hellip;]</p>
+                        <a class="read-more" href="https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/">
+                            <span data-theme="latest_news_read_more">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                    <div id="post-77" class="col-sm-6 col-md-4 space-bottom space-bottom-xs">
+                <div class="post-content card y-move bordered">
+                        <div class="post-thumbnail">
+        <a href="https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/" class="post-list-item-thumb">
+            <img width="332" height="152" src="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage.png 332w, https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-300x137.png 300w" sizes="(max-width: 332px) 100vw, 332px" />        </a>
+    </div>
+                        <div class="col-padding col-padding-xs">
+                        <h3 class="post-title space-bottom-small">
+                            <a href="https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/" rel="bookmark">
+                                A Shareholder Approach to Intergenerational Justice                            </a>
+                        </h3>
+                        <p>Module Essay W.C.: 1981/2000 31440 &#8211; Distributive Justice Today Prof Paula Casal Sisheng Chris Zhang, Universitat Pompeu Fabra MA Political Philosophy Abstract In this essay, I offer a shareholder approach[&hellip;]</p>
+                        <a class="read-more" href="https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/">
+                            <span data-theme="latest_news_read_more">Read more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div></div> <div  class="row"><div  class="text-center"> <a  class="button color1" data-attr-shortcode="href:mesmerize_blog_link" href="https://sishengzhang.com/blog/" target="_self">SEE ALL BLOG POSTS</a></div> </div></div></div><div  id="contact-1" data-label="Contact" data-id="contact-1" data-export-id="contact-1" data-category="contact" class="contact-1 content-section content-section-spacing white-text" data-parallax-depth="20" style="background-image: url(https://sishengzhang.com/wp-content/uploads/2018/08/Background.png); background-size: cover; background-position: center top;"><div  class="gridContainer"> <div  class="row text-center"><div  class="section-title-col" data-type="column"> <h2  class="">Contact &nbsp;Me 联系我</h2> </div> </div> <div  class="row text-center"> <div  class="col-xs-12 col-sm-8 col-sm-offset-2 contact-form-wrapper inline-info"> <div  class="card large-padding"> <div  class="" data-content-shortcode="mesmerize_contact_form shortcode=&quot;contact-form-7 id=&amp;amp;quot;16&amp;amp;quot; title=&amp;amp;quot;Contact form 1&amp;amp;quot;&quot;" data-editable="true"><div role="form" class="wpcf7" id="wpcf7-f16-p17-o1" lang="en-GB" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="https://sishengzhang.com/#wpcf7-f16-p17-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="16" />
+<input type="hidden" name="_wpcf7_version" value="5.0.3" />
+<input type="hidden" name="_wpcf7_locale" value="en_GB" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f16-p17-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="17" />
+</div>
+<p><label> Your Name (required)<br />
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Your Email (required)<br />
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
+<p><label> Subject<br />
+    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </label></p>
+<p><label> Your Message<br />
+    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div></div> </div></div> </div></div>  </div>
+</div>
+
+<br>
+
+<p style='text-align:center;padding-left:20px;'>&#169; Sisheng Chris Zhang <br> SishengZhang.com | Vpchris.com | CZhang.uk
+
+<br><br> 
+
+
 	</div>
-	<ul class="obfx-sharing	obfx-sharing-left">
-					<li class="">
-				<a class = "facebook"
-					 href="https://www.facebook.com/sharer.php?u=https://git.czhang.uk/">
-					<i class="socicon-facebook"></i>
-									</a>
-			</li>
-					<li class="">
-				<a class = "linkedin"
-					 href="https://www.linkedin.com/shareArticle?url=https://git.czhang.uk/&#038;title=Home">
-					<i class="socicon-linkedin"></i>
-									</a>
-			</li>
-					<li class="">
-				<a class = "whatsapp"
-					 href="whatsapp://send/?text=https://git.czhang.uk/">
-					<i class="socicon-whatsapp"></i>
-									</a>
-			</li>
-					<li class="">
-				<a class = "mail"
-					 href="mailto:/?&#038;subject=Home&#038;body=https://git.czhang.uk/">
-					<i class="socicon-mail"></i>
-									</a>
-			</li>
-					<li class="">
-				<a class = "weibo"
-					 href="http://service.weibo.com/share/share.php?url=https://git.czhang.uk/&#038;appkey=&#038;title=Home&#038;pic=&#038;ralateUid=">
-					<i class="socicon-weibo"></i>
-									</a>
-			</li>
-			</ul>
-			<button class="hestia-scroll-to-top">
-			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</button>
-		<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/comment-reply.min.js?ver=4.9.7'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.1'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/js/material.js?ver=1.0.1'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/plugins/mesmerize-companion/theme-data/mesmerize/assets/js/companion.bundle.min.js?ver=1.6.90'></script>
+<script type='text/javascript' src='https://sishengzhang.com/wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.14-6684'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var requestpost = {"ajaxurl":"https:\/\/git.czhang.uk\/wp-admin\/admin-ajax.php","disable_autoslide":""};
+var wpcf7 = {"apiSettings":{"root":"https:\/\/sishengzhang.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/js/scripts.js?ver=1.1.85'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://sishengzhang.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.3'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.5.52'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
 </body>
 </html>
