@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
-	<meta charset='UTF-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-				<!-- Google Analytics -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-			function gtag() {
-				dataLayer.push( arguments );
-			}
+	    <script>
+        (function (exports, d) {
 
-			gtag( 'js', new Date() );
+            var _isReady = false,
+                _event,
+                _fns = [];
 
-			gtag( 'config', '' );
-		</script>
-		<!-- End Google Analytics -->
-		<title>MUN &#8211; Sisheng Chris Zhang</title>
-<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, event);
+                });
+
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+
+                if (window.jQuery) {
+                    jQuery(fn);
+                }
+
+                if (_isReady) {
+                    fn.call(context || exports, _event);
+                }
+
+                _fns.push([fn, context || exports]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>MUN | Sisheng Chris Zhang</title>
+<script data-cfasync='false'>
+    window.$crisp=[];
+    CRISP_RUNTIME_CONFIG = {
+      locale : 'en'
+    };
+    CRISP_WEBSITE_ID = '289ef749-e0b7-4349-85bf-b45038f3fcbf';(function(){
+      d=document;s=d.createElement('script');
+      s.src='https://client.crisp.chat/l.js';
+      s.async=1;d.getElementsByTagName('head')[0].appendChild(s);
+    })();</script>
+<!-- All in One SEO Pack 2.7.2 by Michael Torbert of Semper Fi Web Design[1778,1816] -->
+<link rel="canonical" href="https://sishengzhang.com/tag/mun/" />
+<!-- /all in one seo pack -->
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Feed" href="https://git.czhang.uk/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Comments Feed" href="https://git.czhang.uk/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; MUN Tag Feed" href="https://git.czhang.uk/tag/mun/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Feed" href="https://sishengzhang.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Comments Feed" href="https://sishengzhang.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; MUN Tag Feed" href="https://sishengzhang.com/tag/mun/feed/" />
 		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/git.czhang.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sishengzhang.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
 img.wp-smiley,
@@ -45,403 +93,205 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='hestia-clients-bar-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/companion-legacy/assets/css/hestia/clients-bar.css?ver=4.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-social-sharing-module-0-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/css/public.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-social-sharing-module-1-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/css/vendor/socicon/socicon.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='https://git.czhang.uk/wp-includes/css/dashicons.min.css?ver=4.9.7' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-menu-icons-0-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='obfx-module-pub-css-menu-icons-1-css'  href='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/menu-icons/css/public.css?ver=2.5.6' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css?ver=1.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='orfeo_parent-css'  href='https://git.czhang.uk/wp-content/themes/hestia/style.css?ver=1.0.5' type='text/css' media='all' />
-<style id='orfeo_parent-inline-css' type='text/css'>
-.hestia-pricing .hestia-table-one .card-pricing .category { color: #f5593d; }.hestia-pricing .hestia-table-two .card-pricing { background-color: #f5593d; }.pagination .nav-links .page-numbers { color: #f5593d; border-color: #f5593d; }.pagination .nav-links .page-numbers.current { border-color: #f5593d; }.pagination .nav-links .page-numbers:hover { background-color: #f5593d; }.pagination .nav-links .page-numbers:hover { border-color: #f5593d; }.woocommerce-pagination ul.page-numbers .page-numbers { color: #f5593d; border-color: #f5593d; } .woocommerce-pagination ul.page-numbers li > span.current { border-color: #f5593d !important; }.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: #f5593d; }.woocommerce-pagination ul.page-numbers .page-numbers:hover { border-color: #f5593d; }.entry-categories .label { background-color: #f5593d;}.woocommerce .star-rating { color: #f5593d; }.woocommerce div.product p.stars span a:before { color: #f5593d; }.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: #f5593d; }.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: #f5593d; }.woocommerce-page .woocommerce-message { background-color: #f5593d; }.track_order input[type=submit] { background-color: #f5593d; }.track_order input[type=submit]:hover { background-color: #f5593d; }div[id^=woocommerce_product_tag_cloud].widget a { background-color: #f5593d; }.woocommerce.widget_shopping_cart .buttons > a.button { background-color: #f5593d; }.woocommerce.widget_shopping_cart .buttons > a.button:hover { background-color: #f5593d; }
+<link rel='stylesheet' id='contact-form-7-css'  href='https://sishengzhang.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-core-blocks-css'  href='https://sishengzhang.com/wp-content/plugins/gutenberg/build/core-blocks/style.css?ver=1533818097' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/style.min.css?ver=1.5.52' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.mesmerize-front-page .header-separator .svg-white-bg{fill:#ffffff!important;}.mesmerize-front-page .header-separator svg{height:154px!important;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
 </style>
-<link rel='stylesheet' id='hestia-font-sizes-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/css/font-sizes.css?ver=1.1.85' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='https://git.czhang.uk/wp-content/themes/hestia/assets/font-awesome/css/font-awesome.min.css?ver=1.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='hestia_style-css'  href='https://git.czhang.uk/wp-content/themes/orfeo/style.css?ver=1.1.85' type='text/css' media='all' />
-<style id='hestia_style-inline-css' type='text/css'>
-.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
-			background-color: #363537
-		}
-		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
-			-webkit-box-shadow: inset 0 0 0px 9999px #363537
-		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
-			color: #ffffff
-		} 
-		.hestia-top-bar .widget .label-floating input[type=search]{
-			-webkit-text-fill-color:#ffffff !important 
-		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
-			color: #ffffff
-		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
-			color: #eeeeee
-		}
-	
-		a, 
-		.navbar .dropdown-menu li:hover > a,
-		.navbar .dropdown-menu li:focus > a,
-		.navbar .dropdown-menu li:active > a,
-		.navbar.navbar-not-transparent .nav > li:not(.btn).on-section > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn) > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):hover > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):focus > a, 
-		.navbar.navbar-not-transparent .nav > li.on-section:not(.btn):active > a, 
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
-		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
-		a:hover, 
-		.card-blog a.moretag:hover, 
-		.card-blog a.more-link:hover, 
-		.widget a:hover {
-		    color:#f5593d;
-		}
-		
-		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
-			border-color:#f5593d
-		}
-		
-		button,
-		button:hover,           
-		input[type="button"],
-		input[type="button"]:hover,
-		input[type="submit"],
-		input[type="submit"]:hover,
-		input#searchsubmit, 
-		.pagination span.current, 
-		.pagination span.current:focus, 
-		.pagination span.current:hover,
-		.btn.btn-primary,
-		.btn.btn-primary:link,
-		.btn.btn-primary:hover, 
-		.btn.btn-primary:focus, 
-		.btn.btn-primary:active, 
-		.btn.btn-primary.active, 
-		.btn.btn-primary.active:focus, 
-		.btn.btn-primary.active:hover,
-		.btn.btn-primary:active:hover, 
-		.btn.btn-primary:active:focus, 
-		.btn.btn-primary:active:hover,
-		.hestia-sidebar-open.btn.btn-rose,
-		.hestia-sidebar-close.btn.btn-rose,
-		.hestia-sidebar-open.btn.btn-rose:hover,
-		.hestia-sidebar-close.btn.btn-rose:hover,
-		.hestia-sidebar-open.btn.btn-rose:focus,
-		.hestia-sidebar-close.btn.btn-rose:focus,
-		.label.label-primary,
-		.hestia-work .portfolio-item:nth-child(6n+1) .label,
-		.nav-cart .nav-cart-content .widget .buttons .button{
-		    background-color: #f5593d;
-		}
-		
-		@media (max-width: 768px) { 
-	
-			.navbar-default .navbar-nav>li>a:hover,
-			.navbar-default .navbar-nav>li>a:focus,
-			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
-			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
-			.navbar button.navbar-toggle:hover,
-			.navbar .navbar-nav li:hover > a i {
-			    color: #f5593d;
-			}
-		}
-		
-		button,
-		.button,
-		input[type="submit"], 
-		input[type="button"], 
-		.btn.btn-primary,
-		.hestia-sidebar-open.btn.btn-rose,
-		.hestia-sidebar-close.btn.btn-rose {
-		    -webkit-box-shadow: 0 2px 2px 0 rgba(245,89,61,0.14),0 3px 1px -2px rgba(245,89,61,0.2),0 1px 5px 0 rgba(245,89,61,0.12);
-		    box-shadow: 0 2px 2px 0 rgba(245,89,61,0.14),0 3px 1px -2px rgba(245,89,61,0.2),0 1px 5px 0 rgba(245,89,61,0.12);
-		}
-		
-		.card .header-primary, .card .content-primary {
-		    background: #f5593d;
-		}
-		
-		.button:hover,
-		button:hover,
-		input[type="submit"]:hover,
-		input[type="button"]:hover,
-		input#searchsubmit:hover, 
-		.pagination span.current, 
-		.btn.btn-primary:hover, 
-		.btn.btn-primary:focus, 
-		.btn.btn-primary:active, 
-		.btn.btn-primary.active, 
-		.btn.btn-primary:active:focus, 
-		.btn.btn-primary:active:hover, 
-		.hestia-sidebar-open.btn.btn-rose:hover,
-		.hestia-sidebar-close.btn.btn-rose:hover,
-		.pagination span.current:hover{
-			-webkit-box-shadow: 0 14px 26px -12pxrgba(245,89,61,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(245,89,61,0.2);
-		    box-shadow: 0 14px 26px -12px rgba(245,89,61,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(245,89,61,0.2);
-			color: #fff;
-		}
-		
-		.form-group.is-focused .form-control {
-		background-image: -webkit-gradient(linear,left top, left bottom,from(#f5593d),to(#f5593d)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
-			background-image: -webkit-linear-gradient(#f5593d),to(#f5593d),-webkit-linear-gradient(#d2d2d2,#d2d2d2);
-			background-image: linear-gradient(#f5593d),to(#f5593d),linear-gradient(#d2d2d2,#d2d2d2);
-		}
-		
-		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
-		 .navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
-		 .navbar.full-screen-menu .navbar-toggle:hover,
-		 .navbar:not(.navbar-transparent) .nav-cart:hover, 
-		 .navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
-				 color:#f5593d}
-		
-		.header-filter-gradient { 
-			background: linear-gradient(45deg, rgba(81,188,218,1) 0%, rgb(147,216,197) 100%); 
-		} 
-h1, h2, h3, h4, h5, h6, .hestia-title, .hestia-title.title-in-content, p.meta-in-content , .info-title, .card-title,
-		.page-header.header-small .hestia-title, .page-header.header-small .title, .widget h5, .hestia-title, 
-		.title, .card-title, .info-title, .footer-brand, .footer-big h4, .footer-big h5, .media .media-heading, 
-		.carousel h1.hestia-title, .carousel h2.title, 
-		.carousel span.sub-title, .woocommerce.single-product h1.product_title, .woocommerce section.related.products h2, .hestia-about h1, .hestia-about h2, .hestia-about h3, .hestia-about h4, .hestia-about h5 {
-			font-family: Montserrat;
-		}
-		body, ul, .tooltip-inner {
-			font-family: Montserrat;
-		}
-@media (min-width: 769px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 42px;
-			}}@media (max-width: 768px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 36px;
-			}}@media (max-width: 480px){
-			.page-header.header-small .hestia-title,
-			.page-header.header-small .title,
-			h1.hestia-title.title-in-content{
-				font-size: 36px;
-			}}@media (min-width: 769px){#carousel-hestia-generic .hestia-title{
-		font-size: 54px;
-		}#carousel-hestia-generic span.sub-title{
-		font-size: 19px;
-		}#carousel-hestia-generic .btn{
-		font-size: 15px;
-		}}
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.5.52' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
 
-			.home.blog .hestia-blogs {
-				background-color: #fff !important;
-			}
-		
-			.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
-			.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
-				margin-left: auto;
-				margin-right: auto;
-			}
-		
-			.btn,
-			button,
-			.button {
-				box-shadow: none !important;
-			}
-			
-			.btn:hover,
-			button:hover,
-			.button:hover {
-				opacity: 0.75;
-			}
-		
-			.carousel .buttons .btn-primary + .btn-right {
-				margin-left: 15px;
-			}		
-			.carousel .buttons .btn,
-			.carousel .buttons .btn-right {
-				margin: 15px;
-			}
-		
-			.carousel .hestia-big-title-content .hestia-title {
-				font-weight: 800;
-			}
-			.carousel .hestia-big-title-content .sub-title {
-				font-family: inherit;
-				font-size: 19px;
-				font-weight: 300;
-				line-height: 26px;
-				margin: 0 0 8px;
-			}
-			.carousel .hestia-big-title-content .buttons .btn,
-			.carousel .hestia-big-title-content .buttons .btn-right {
-				border-radius: 30px;
-				font-family: inherit;
-				font-size: 14px;
-				font-weight: 600;
-				line-height: 24px;
-				padding: 11px 30px;
-			}
-			.carousel .hestia-big-title-content .buttons .btn-right {
-				background-color: transparent;
-				border: 2px solid #fff;
-				padding: 9px 28px;
-			}
-		
+                var headerTop = document.querySelector('.header-top');
+                document
+                    .querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage')
+                    .forEach(function (item) {
+                        item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                    });
+            }
 
-		.page-template-builder-fullwidth-std .header > .elementor {
-			padding-top: 70px;
-		}
+            window.addEventListener('resize', setHeaderTopSpacing);
 
-</style>
-<link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=1.1.85' type='text/css' media='all' />
-<link rel='stylesheet' id='hestia-google-font-montserrat-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C700&#038;subset=latin&#038;ver=4.9.7' type='text/css' media='all' />
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+            window.addEventListener('resize', setHeaderTopSpacing);
+
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://sishengzhang.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sishengzhang.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sishengzhang.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+        <style data-name="overlap">
+            @media only screen and (min-width: 768px) {
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .header-homepage {
+                    padding-bottom: 95px;
+                }
+
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .content {
+                    position: relative;
+                    z-index: 10;
+                }
+
+                .mesmerize-front-page:not(.mesmerize-front-page-with-slider) .page-content div[data-overlap]:first-of-type > div:first-of-type {
+                    margin-top: -95px;
+                    background: transparent !important;
+                    position: relative;
+                }
+
+                .page-template:not(.mesmerize-front-page-with-slider) [data-overlap="true"]:first-of-type {
+                    padding-top: 0;
+                }
+            }
+        </style>
+            <script type="text/javascript" data-name="async-styles">
+        (function () {
+            document.querySelectorAll('link[data-href]').forEach(function (item) {
+                item.href = item.getAttribute('data-href')
+            });
+        })()
+
+
+    </script>
+    <link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-270x270.jpg" />
+    <style id="page-content-custom-styles">
+            </style>
+            <style data-name="header-shapes">
+            .header.color-overlay:after {background:url(https://sishengzhang.com/wp-content/themes/mesmerize/assets/images/header-shapes/circles.png) center center/ cover no-repeat}        </style>
+            <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #F5FAFD;
+        }
+    </style>
+    </head>
+
+<body class="archive tag tag-mun tag-6 wp-custom-logo mesmerize-inner-page">
+
+<div  id="page-top" class="header-top">
+		<div class="navigation-bar bordered"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-33"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35"><a href="https://sishengzhang.com/#contact-1">Contact</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-33"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35"><a href="https://sishengzhang.com/#contact-1">Contact</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+<div id="page" class="site">
+    <div class="header-wrapper">
+        <div  class='header  color-overlay' style='; background:#6a73da'>
+            								    <div class="inner-header-description gridContainer">
+        <div class="row header-description-row">
+    <div class="col-xs col-xs-12">
+        <h1 class="hero-title">
+            Tag: MUN        </h1>
+                    <p class="header-subtitle">张斯盛</p>
+            </div>
+        </div>
+    </div>
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                        </div>
+    </div>
+
+    <div class="content blog-page">
+        <div class="gridContainer gridContainer content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="post-list row">
+                        <div class="post-list-item col-xs-12 space-bottom col-sm-12 col-md-12" data-masonry-width="col-md-12">
+    <div id="post-99" class="blog-post card  post-99 post type-post status-publish format-standard has-post-thumbnail hentry category-faq tag-mun">
+        <div class="post-content">
+       
+                <div class="post-thumbnail">
+        <a href="https://sishengzhang.com/2018/08/09/mun/" class="post-list-item-thumb">
+            <img width="351" height="143" src="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-4.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-4.png 351w, https://sishengzhang.com/wp-content/uploads/2018/08/DraggedImage-4-300x122.png 300w" sizes="(max-width: 351px) 100vw, 351px" />        </a>
+    </div>
+    
+            <div class="col-xs-12 col-padding col-padding-xs">
+                <h3 class="post-title">
+                    <a href="https://sishengzhang.com/2018/08/09/mun/" rel="bookmark">
+                        MUN                    </a>
+                </h3>
+                <div class="post-meta small muted space-bottom-small">
+    <span class="date">9th August 2018</span>
+</div>
+
+
+                <div class="post-excerpt">
+                    <p>Where did the MUN section on your website go? As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: vpchris.com/mun What about your edited Rules and Procedures? Still available (though I have not update&hellip; <br /> <a class="read-more" href="https://sishengzhang.com/2018/08/09/mun/">Read more</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="navigation-c">
+                                            </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+
+<br>
+
+<p style='text-align:center;padding-left:20px;'>&#169; Sisheng Chris Zhang <br>本站最终解释权归Sisheng Chris Zhang所有
+
+<br> SishengZhang.com | Vpchris.com | CZhang.uk
+
+<br><br> 
+
+
+	</div>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var pf = {"spam":{"label":"I'm human!","value":"d44340866f"}};
+var wpcf7 = {"apiSettings":{"root":"https:\/\/sishengzhang.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/plugins/pirate-forms/public/js/custom-spam.js?ver=4.9.7'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/plugins/themeisle-companion/obfx_modules/social-sharing/js/public.js?ver=2.5.6'></script>
-<link rel='https://api.w.org/' href='https://git.czhang.uk/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://git.czhang.uk/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://git.czhang.uk/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.7" />
-		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<link rel="icon" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-180x180.jpg" />
-<meta name="msapplication-TileImage" content="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-270x270.jpg" />
-</head>
-
-<body class="archive tag tag-mun tag-6 wp-custom-logo">
-	<div class="wrapper">
-		<header class="header">
-					<nav class="navbar navbar-default navbar-fixed-top  hestia_left navbar-not-transparent">
-						<div class="container">
-				<div class="navbar-header">
-					<div class="title-logo-wrapper">
-						<a class="navbar-brand" href="https://git.czhang.uk/"
-								title="Sisheng Chris Zhang">
-							<img src="https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-Original.png" alt="Sisheng Chris Zhang"></a>
-					</div>
-				</div>
-				<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-main" class="nav navbar-nav navbar-right"><li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35"><a title="Sisheng Chris Zhang" href="https://git.czhang.uk/">Sisheng Chris Zhang</a></li>
-
-		<li class="hestia-search-in-menu">
-			<form role="search" method="get" class="hestia-search-in-nav" action="https://git.czhang.uk/">
-				<div class="hestia-nav-search">
-					<span class="screen-reader-text">Search for:</span>
-					<span class="search-field-wrapper">
-					
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-					</span>
-					<span class="search-submit-wrapper">
-					<button type="submit" class="search-submit hestia-search-submit" ><i class="fa fa-search"></i></button>
-					</span>
-				</div>
-			</form>
-			<div class="hestia-toggle-search">
-				<i class="fa fa-search"></i>
-			</div>
-		</li></ul></div>					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="sr-only">Toggle Navigation</span>
-					</button>
-								</div>
-
-					</nav>
-		<div style="display: none"></div>		</header>
-<div id="primary" class="boxed-layout-header page-header header-small"
-				data-parallax="active">			<div class="container">
-			<div class="row">
-			<div class="col-md-10 col-md-offset-1 text-center">
-			<h1 class="hestia-title">MUN</h1>			</div>
-			</div>
-			</div>
-			<div class="header-filter header-filter-gradient"></div></div>
-<div class="main  main-raised">
-	<div class="hestia-blogs">
-		<div class="container">
-			<div class="row">
-								<div class="col-md-8 archive-post-wrap">
-					
-<article
-		id="post-93" class="card card-plain card-blog post-93 post type-post status-publish format-standard hentry category-faq tag-mun">
-	<div class="row">
-					<div class="col-sm-12">
-								<h6 class="category text-info"><a href="https://git.czhang.uk/category/faq/" title="View all posts in FAQ" >FAQ</a> </h6>
-				<h2 class="card-title entry-title"><a href="https://git.czhang.uk/2018/08/01/mun/" title="MUN" rel="bookmark">MUN</a></h2>				<div class="card-description">
-					<p>
-						Where did the MUN section on your website go?As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: vpchris.com/mun What about your edited Rules and Procedures?Still available (though I<a class="moretag" href="https://git.czhang.uk/2018/08/01/mun/"> Read more&hellip;</a>					</p>
-				</div>
-				<div class="author">
-					By <a href="https://git.czhang.uk/author/vpchris/" title="C Zhang" class="vcard author"><strong class="fn">C Zhang</strong></a>, <a href="https://git.czhang.uk/2018/08/01/mun/"><time>14 mins</time> ago </a>					<time class="date updated published" datetime="2018-08-01T16:51:19+01:00">1st August 2018</time>
-				</div>
-			</div>
-		</div>
-
-</article>
-				</div>
-					<div class="col-md-3 blog-sidebar-wrapper col-md-offset-1">
-		<aside id="secondary" class="blog-sidebar" role="complementary">
-			<div id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://git.czhang.uk/">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-				</label>
-				<input type="submit" class="search-submit" value="Search" />
-			</form></div>		<div id="recent-posts-2" class="widget widget_recent_entries">		<h5>Recent Posts</h5>		<ul>
-											<li>
-					<a href="https://git.czhang.uk/2018/08/01/general-questions/">General Questions</a>
-									</li>
-											<li>
-					<a href="https://git.czhang.uk/2018/08/01/mun/">MUN</a>
-									</li>
-											<li>
-					<a href="https://git.czhang.uk/2018/08/01/rough-guide-for-lisbon-and-porto/">Rough Guide for Lisbon and Porto</a>
-									</li>
-											<li>
-					<a href="https://git.czhang.uk/2018/08/01/a-shareholder-approach-to-intergenerational-justice/">A Shareholder Approach to Intergenerational Justice</a>
-									</li>
-											<li>
-					<a href="https://git.czhang.uk/2018/08/01/to-what-extent-does-a-nation-require-a-state/">To What Extent Does a Nation Require a State?</a>
-									</li>
-					</ul>
-		</div><div id="recent-comments-2" class="widget widget_recent_comments"><h5>Recent Comments</h5><ul id="recentcomments"></ul></div><div id="archives-2" class="widget widget_archive"><h5>Archives</h5>		<ul>
-			<li><a href='https://git.czhang.uk/2018/08/'>August 2018</a></li>
-		</ul>
-		</div><div id="categories-2" class="widget widget_categories"><h5>Categories</h5>		<ul>
-	<li class="cat-item cat-item-3"><a href="https://git.czhang.uk/category/essays/" >Essays</a>
-</li>
-	<li class="cat-item cat-item-7"><a href="https://git.czhang.uk/category/faq/" >FAQ</a>
-</li>
-	<li class="cat-item cat-item-4"><a href="https://git.czhang.uk/category/travelling/" >Travelling</a>
-</li>
-		</ul>
-</div><div id="meta-2" class="widget widget_meta"><h5>Meta</h5>			<ul>
-						<li><a href="https://git.czhang.uk/wp-login.php">Log in</a></li>
-			<li><a href="https://git.czhang.uk/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-			<li><a href="https://git.czhang.uk/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
-			</div>		</aside><!-- .sidebar .widget-area -->
-	</div>
-				</div>
-		</div>
-	</div>
-			</div>
-	</div>
-		<button class="hestia-scroll-to-top">
-			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</button>
-		<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js?ver=1.0.1'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/js/material.js?ver=1.0.1'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var requestpost = {"ajaxurl":"https:\/\/git.czhang.uk\/wp-admin\/admin-ajax.php","disable_autoslide":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-content/themes/hestia/assets/js/scripts.js?ver=1.1.85'></script>
-<script type='text/javascript' src='https://git.czhang.uk/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://sishengzhang.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.3'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.5.52'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
 </body>
 </html>

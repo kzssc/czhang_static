@@ -10,47 +10,44 @@
 <channel>
 	<title>MUN &#8211; Sisheng Chris Zhang</title>
 	<atom:link href="http://localhost/tag/mun/feed/" rel="self" type="application/rss+xml" />
-	<link>https://git.czhang.uk/</link>
+	<link>https://sishengzhang.com/</link>
 	<description>张斯盛</description>
-	<lastBuildDate>Wed, 01 Aug 2018 16:03:26 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 09 Aug 2018 13:41:20 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
 
 <image>
-	<url>https://git.czhang.uk/wp-content/uploads/2018/08/cropped-Logo-cut-1-32x32.jpg</url>
+	<url>https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-32x32.jpg</url>
 	<title>MUN &#8211; Sisheng Chris Zhang</title>
-	<link>https://git.czhang.uk/</link>
+	<link>https://sishengzhang.com/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>MUN</title>
-		<link>https://git.czhang.uk/2018/08/01/mun/</link>
-		<comments>https://git.czhang.uk/2018/08/01/mun/#respond</comments>
-		<pubDate>Wed, 01 Aug 2018 15:51:19 +0000</pubDate>
-		<dc:creator><![CDATA[C Zhang]]></dc:creator>
+		<link>https://sishengzhang.com/2018/08/09/mun/</link>
+		<comments>https://sishengzhang.com/2018/08/09/mun/#respond</comments>
+		<pubDate>Thu, 09 Aug 2018 12:55:12 +0000</pubDate>
+		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[FAQ]]></category>
 		<category><![CDATA[MUN]]></category>
 
-		<guid isPermaLink="false">https://git.czhang.uk/?p=93</guid>
-		<description><![CDATA[Where did the MUN section on your website go?As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: vpchris.com/mun What about your edited Rules and Procedures?Still available (though I<a class="moretag" href="https://git.czhang.uk/2018/08/01/mun/"> Read more&#8230;</a>]]></description>
+		<guid isPermaLink="false">https://sishengzhang.com/?p=99</guid>
+		<description><![CDATA[Where did the MUN section on your website go? As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: vpchris.com/mun What about your edited Rules and Procedures? Still available (though I have not update&#8230; <br> <a class="read-more" href="https://sishengzhang.com/2018/08/09/mun/">Read more</a>]]></description>
 				<content:encoded><![CDATA[<ol>
-<li>Where did the MUN section on your website go?As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: <a href="www.vpchris.com/mun">vpchris.com/mun</a></li>
-<li>What about your edited Rules and Procedures?Still available (though I have not update it at all), just drop me a line. But there is no reason why you should rely on my RoP as there are so many great and updated RoPs out there!</li>
-<li>Can I still invite you to a conference?<strong>Sure</strong>, but make sure it’s a good one.</li>
-<li>Can I see your MUN CV?<a href="https://my.pcloud.com/publink/show?code=XZQDxQ7ZVPV7yByx1rHhezPvntun9423I3x7">Here</a></li>
-<li>Should I go into MUN?Perhaps a bit biased: definitely.
-<ol start="6">
-<li>But my english is bad, I’m not sure.Tough luck that you’re reading this.</li>
-<li>But I don’t want a political career.Yeah sure all MUNers ended up being presidents for their countries. (Not)</li>
-</ol>
-</li>
-<li>Should I represent my own country?No.</li>
+<li>Where did the MUN section on your website go?		As I am no longer active in MUN (not sure if that’s “retirement”), MUN seizes to be a big part of my life. Archive posts, however can still be accessed here: <a href="www.vpchris.com/mun">vpchris.com/mun</a></li>
+<li>What about your edited Rules and Procedures?		Still available (though I have not update it at all), just drop me a line. But there is no reason why you should rely on my RoP as there are so many great and updated RoPs out there!</li>
+<li>Can I still invite you to a conference?		<strong>Sure</strong>, but make sure it’s a good one.</li>
+<li>Can I see your MUN CV?		<a href="https://sishengzhang.com/wp-content/uploads/2018/08/Sisheng-Chris-Zhang-MUN-Resume.pdf">Here</a></li>
+<li>Should I go into MUN?		Perhaps a bit biased: definitely.</li>
+<li>But my english is bad, I’m not sure.		Tough luck that you’re reading this.</li>
+<li>But I don’t want a political career.		Yeah sure all MUNers ended up being presidents for their countries. (Not)</li>
+<li>Should I represent my own country?		No.</li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://git.czhang.uk/2018/08/01/mun/feed/</wfw:commentRss>
+			<wfw:commentRss>https://sishengzhang.com/2018/08/09/mun/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
