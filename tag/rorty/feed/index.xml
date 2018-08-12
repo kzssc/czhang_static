@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/tag/rorty/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
 	<description>张斯盛</description>
-	<lastBuildDate>Fri, 10 Aug 2018 11:51:16 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 12 Aug 2018 11:23:12 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -28,7 +28,6 @@
 	<item>
 		<title>Is Rorty a Non-Ideal Theorist?</title>
 		<link>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/</link>
-		<comments>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/#respond</comments>
 		<pubDate>Wed, 08 Aug 2018 21:14:24 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[Essay]]></category>
@@ -117,8 +116,6 @@
 <li id="fn45">Parfit, Derek, and Samuel Scheffler. 2013. On What Matters I. Oxford University Press, 413 <a href="#ffn45"><img src="https://s.w.org/images/core/emoji/11/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 	</channel>
 </rss>

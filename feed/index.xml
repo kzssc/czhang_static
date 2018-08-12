@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
 	<description>张斯盛</description>
-	<lastBuildDate>Fri, 10 Aug 2018 11:51:16 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 12 Aug 2018 11:23:12 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -28,7 +28,6 @@
 	<item>
 		<title>General Questions</title>
 		<link>https://sishengzhang.com/2018/08/09/general-questions/</link>
-		<comments>https://sishengzhang.com/2018/08/09/general-questions/#respond</comments>
 		<pubDate>Thu, 09 Aug 2018 13:12:33 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[FAQ]]></category>
@@ -55,13 +54,10 @@
 <li id="fn1"><a href="https://en.wikipedia.org/wiki/Mozart_in_the_Jungle">https://en.wikipedia.org/wiki/Mozart_in_the_Jungle</a> <a href="#ffn1"><img src="https://s.w.org/images/core/emoji/11/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/09/general-questions/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>Getting Political Philosophy Books</title>
 		<link>https://sishengzhang.com/2018/08/09/book/</link>
-		<comments>https://sishengzhang.com/2018/08/09/book/#respond</comments>
 		<pubDate>Thu, 09 Aug 2018 13:05:37 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[FAQ]]></category>
@@ -80,15 +76,14 @@
 <li>Format: Book name (space) author (e.g., Morality of Freedom Joseph Raz)</li>
 </ol>
 
-[contact-form-7]
+<iframe height="800" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="http://sishengzhang.mikecrm.com/ICNVUEZ"></iframe>
+
+<p></p>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/09/book/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>MUN</title>
 		<link>https://sishengzhang.com/2018/08/09/mun/</link>
-		<comments>https://sishengzhang.com/2018/08/09/mun/#respond</comments>
 		<pubDate>Thu, 09 Aug 2018 12:55:12 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[FAQ]]></category>
@@ -107,13 +102,10 @@
 <li>Should I represent my own country?		No.</li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/09/mun/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>What Distributive Principle Should Guide State Support for Education?</title>
 		<link>https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/</link>
-		<comments>https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/#respond</comments>
 		<pubDate>Wed, 08 Aug 2018 22:15:55 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[Essay]]></category>
@@ -234,13 +226,10 @@
 <li id="fn35">https://data.oecd.org/eduatt/adult-education-level.htm#indicator-chart <a href="#ffn35">&#8617;</a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/08/what-distributive-principle-should-guide-state-support-for-education/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>To What Extent Does a Nation Require a State?</title>
 		<link>https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/</link>
-		<comments>https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/#respond</comments>
 		<pubDate>Wed, 08 Aug 2018 22:14:49 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[Essay]]></category>
@@ -375,13 +364,10 @@
 <li id="fn59">“…<em>culture and cultures are always in flux, individuals normally relate to culture through the acknowledgement of diverse practices, customs, and activities…</em>” Ibid., p. 268 <a href="#ffn59">&#8617;</a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/08/to-what-extent-does-a-nation-require-a-state/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>A Shareholder Approach to Intergenerational Justice</title>
 		<link>https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/</link>
-		<comments>https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/#respond</comments>
 		<pubDate>Wed, 08 Aug 2018 22:12:15 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[Essay]]></category>
@@ -458,13 +444,10 @@
 <li id="fn21">More likely, at least.  <a href="#ffn21">&#8617;</a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/08/a-shareholder-approach-to-intergenerational-justice/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 		<item>
 		<title>Is Rorty a Non-Ideal Theorist?</title>
 		<link>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/</link>
-		<comments>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/#respond</comments>
 		<pubDate>Wed, 08 Aug 2018 21:14:24 +0000</pubDate>
 		<dc:creator><![CDATA[Chris]]></dc:creator>
 				<category><![CDATA[Essay]]></category>
@@ -553,8 +536,6 @@
 <li id="fn45">Parfit, Derek, and Samuel Scheffler. 2013. On What Matters I. Oxford University Press, 413 <a href="#ffn45"><img src="https://s.w.org/images/core/emoji/11/72x72/21a9.png" alt="↩" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></li>
 </ol>
 ]]></content:encoded>
-			<wfw:commentRss>https://sishengzhang.com/2018/08/08/is-rorty-a-non-ideal-theorist/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+			</item>
 	</channel>
 </rss>
