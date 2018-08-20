@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/category/faq/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
 	<description>张斯盛</description>
-	<lastBuildDate>Sun, 12 Aug 2018 14:35:25 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 20 Aug 2018 14:57:22 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -75,8 +75,6 @@
 <li>You can submit in but, but one-book-per-line, please.</li>
 <li>Format: Book name (space) author (e.g., Morality of Freedom Joseph Raz)</li>
 </ol>
-
-<iframe height="800" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="http://sishengzhang.mikecrm.com/ICNVUEZ"></iframe>
 
 <div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="http://sishengzhang.mikecrm.com/ICNVUEZ">Submit Here</a></div>
 ]]></content:encoded>
