@@ -88,12 +88,12 @@ img.emoji {
 </style>
 <link rel='stylesheet' id='download-attachments-frontend-css'  href='https://sishengzhang.com/wp-content/plugins/download-attachments/css/frontend.css?ver=4.9.8' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css'  href='https://sishengzhang.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1536133594' type='text/css' media='all' />
-<link rel='stylesheet' id='mesmerize-style-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/style.min.css?ver=1.6.59' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/style.min.css?ver=1.6.61' type='text/css' media='all' />
 <style id='mesmerize-style-inline-css' type='text/css'>
 img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
-/** cached kirki style */.header{background-position:center center;}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.header-homepage-arrow{font-size:50px !important;bottom:20px !important;background:rgba(255,255,255,0);}.header-homepage-arrow > i{width:50px;height:50px;color:#ffffff;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
+/** cached kirki style */.header{background-position:center center;}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
 </style>
-<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.59' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.61' type='text/css' media='all' />
 <link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript'>
@@ -101,13 +101,24 @@ img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
         (function () {
             function setHeaderTopSpacing() {
 
+                setTimeout(function() {
                 var headerTop = document.querySelector('.header-top');
-                var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+                var headers = document.querySelectorAll('.header-wrapper .header, .header-wrapper .header-homepage');
 
                 for (var i = 0; i < headers.length; i++) {
                     var item = headers[0];
                     item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
                 }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
             }
 
             window.addEventListener('resize', setHeaderTopSpacing);
@@ -551,7 +562,7 @@ window.onload = function(){disableSelection(document.body);};
     </style>
 <script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 <script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
-<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.59'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.61'></script>
 <script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
 </body>
 </html>
