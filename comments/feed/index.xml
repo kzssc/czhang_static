@@ -6,13 +6,17 @@
 	
 	>
 <channel>
-	<title>Comments for Sisheng Chris Zhang</title>
-	<atom:link href="http://localhost/comments/feed/" rel="self" type="application/rss+xml" />
+	<title>
+	Comments for Sisheng Chris Zhang	</title>
+	<atom:link href="http://czhang/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
-	<description>张斯盛</description>
-	<lastBuildDate>Sun, 09 Sep 2018 21:46:40 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<description>An-Ever Philosophising Technophile</description>
+	<lastBuildDate>
+	Thu, 18 Apr 2019 02:03:02 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
 </channel>
 </rss>
