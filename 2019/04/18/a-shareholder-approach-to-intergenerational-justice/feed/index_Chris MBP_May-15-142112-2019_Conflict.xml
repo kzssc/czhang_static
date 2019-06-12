@@ -7,15 +7,16 @@
 	>
 <channel>
 	<title>
-	Comments for Sisheng Chris Zhang	</title>
-	<atom:link href="http://czhang/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://sishengzhang.com/</link>
+	Comments on: A Shareholder Approach to Intergenerational Justice	</title>
+	<atom:link href="http://czhang/2019/04/18/a-shareholder-approach-to-intergenerational-justice/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sishengzhang.com/2019/04/18/a-shareholder-approach-to-intergenerational-justice/</link>
 	<description>An-Ever Philosophising Technophile</description>
-	<lastBuildDate>2019-06-12 07:08:39</lastBuildDate>
+	<lastBuildDate>
+	Mon, 29 Apr 2019 17:46:04 +0000	</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.2.1</generator>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
 </channel>
 </rss>
