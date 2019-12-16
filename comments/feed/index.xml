@@ -11,11 +11,11 @@
 	<atom:link href="http://czhang/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
 	<description>An-Ever Philosophising Technophile</description>
-	<lastBuildDate>2019-09-11 02:22:33</lastBuildDate>
+	<lastBuildDate>2019-12-16 08:13:33</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.2.3</generator>
+	<generator>https://wordpress.org/?v=5.3.1</generator>
 </channel>
 </rss>
