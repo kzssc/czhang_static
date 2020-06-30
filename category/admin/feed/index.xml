@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.3.2</generator>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
 
 <image>
 	<url>https://sishengzhang.com/wp-content/uploads/2019/04/cropped-Logo-cut-32x32.jpg</url>
@@ -30,13 +30,14 @@
 	<item>
 		<title>Getting Political Philosophy Books</title>
 		<link>https://sishengzhang.com/2019/04/18/getting-political-philosophy-books/</link>
-				<pubDate>Thu, 18 Apr 2019 01:21:45 +0000</pubDate>
+		
 		<dc:creator><![CDATA[C.Zhang]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2019 01:21:45 +0000</pubDate>
 				<category><![CDATA[Admin]]></category>
-
 		<guid isPermaLink="false">https://sishengzhang.com/?p=98</guid>
-				<description><![CDATA[I can help you (to the best of my ability) to get access to political philosophy books. Couple caveats: Sometimes books are not free, I will have to pay some money too. I don’t mind paying for you first, but you have to pay me back later. Trust is important.<a class="moretag" href="https://sishengzhang.com/2019/04/18/getting-political-philosophy-books/"> Read more&#8230;</a>]]></description>
-								<content:encoded><![CDATA[
+
+					<description><![CDATA[I can help you (to the best of my ability) to get access to political philosophy books. Couple caveats: Sometimes books are not free, I will have to pay some money too. I don’t mind paying for you first, but you have to pay me back later. Trust is important.<a class="moretag" href="https://sishengzhang.com/2019/04/18/getting-political-philosophy-books/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
 <p><strong>I can help you (to the best of my ability) to get access to political philosophy books. </strong></p>
 
 
@@ -51,6 +52,9 @@
 
 <p>Once you have read (and agree) with all these terms, click here: <a href="http://sishengzhang.mikecrm.com/ICNVUEZ">book</a></p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 	</channel>
 </rss>
