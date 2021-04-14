@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+	    <script>
+        (function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);
+    </script>
+    <title>Is Rorty a Non-Ideal Theorist? | Sisheng Chris Zhang</title>
+<script data-cfasync='false'>
+    window.$crisp=[];
+    CRISP_RUNTIME_CONFIG = {
+      locale : 'en'
+    };
+    CRISP_WEBSITE_ID = '289ef749-e0b7-4349-85bf-b45038f3fcbf';(function(){
+      d=document;s=d.createElement('script');
+      s.src='https://client.crisp.chat/l.js';
+      s.async=1;d.getElementsByTagName('head')[0].appendChild(s);
+    })();</script>
+<!-- All in One SEO Pack 2.7.3 by Michael Torbert of Semper Fi Web Design[1673,1738] -->
+<link rel="canonical" href="https://sishengzhang.com/2018/08/10/is-rorty-a-non-ideal-theorist/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Feed" href="https://sishengzhang.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Comments Feed" href="https://sishengzhang.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sisheng Chris Zhang &raquo; Is Rorty a Non-Ideal Theorist? Comments Feed" href="https://sishengzhang.com/2018/08/10/is-rorty-a-non-ideal-theorist/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/sishengzhang.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='download-attachments-frontend-css'  href='https://sishengzhang.com/wp-content/plugins/download-attachments/css/frontend.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://sishengzhang.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1536133594' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-style-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/style.min.css?ver=1.6.61' type='text/css' media='all' />
+<style id='mesmerize-style-inline-css' type='text/css'>
+img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
+/** cached kirki style */.header{background-position:center center;}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.header-homepage-arrow{font-size:calc( 50px * 0.84 );bottom:20px;background:rgba(255,255,255,0);}.header-homepage-arrow > i.fa{width:50px;height:50px;}.header-homepage-arrow > i{color:#ffffff;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}
+</style>
+<link rel='stylesheet' id='mesmerize-style-bundle-css'  href='https://sishengzhang.com/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.61' type='text/css' media='all' />
+<link rel='stylesheet' id='mesmerize-fonts-css'   data-href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript'>
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                var headerTop = document.querySelector('.header-top');
+                var headers = document.querySelectorAll('.header-wrapper .header, .header-wrapper .header-homepage');
+
+                for (var i = 0; i < headers.length; i++) {
+                    var item = headers[0];
+                    item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<script type='text/javascript' src='https://sishengzhang.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://sishengzhang.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sishengzhang.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sishengzhang.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='General Questions' href='https://sishengzhang.com/2018/08/09/general-questions/' />
+<link rel='next' title='A Shareholder Approach to Intergenerational Justice' href='https://sishengzhang.com/2018/08/10/a-shareholder-approach-to-intergenerational-justice/' />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='https://sishengzhang.com/?p=69' />
+<link rel="alternate" type="application/json+oembed" href="https://sishengzhang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsishengzhang.com%2F2018%2F08%2F10%2Fis-rorty-a-non-ideal-theorist%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sishengzhang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsishengzhang.com%2F2018%2F08%2F10%2Fis-rorty-a-non-ideal-theorist%2F&#038;format=xml" />
+<script id="wpcp_disable_selection" type="text/javascript">
+//<![CDATA[
+var image_save_msg='You Can Not Save images!';
+	var no_menu_msg='Context Menu disabled!';
+	var smessage = "Content is protected !!";
+
+function disableEnterKey(e)
+{
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+    //if (key != 17) alert(key);
+     if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43)
+     {
+          show_wpcp_message('You are not allowed to copy content or view source');
+          return false;
+     }else
+     	return true;
+     }
+}
+
+function disable_copy(e)
+{	
+	var elemtype = e.target.nodeName;
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	elemtype = elemtype.toUpperCase();
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		if (smessage !== "" && e.detail == 2)
+			show_wpcp_message(smessage);
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+function disable_copy_ie()
+{
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		//alert(navigator.userAgent.indexOf('MSIE'));
+			//if (smessage !== "") show_wpcp_message(smessage);
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    //For IE This code will work
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    
+    //For Firefox This code will work
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    
+    //All other  (ie: Opera) This code will work
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+//Calling the JS function directly just after body load
+window.onload = function(){disableSelection(document.body);};
+//]]>
+</script>
+	<script id="wpcp_disable_Right_Click" type="text/javascript">
+	//<![CDATA[
+	document.ondragstart = function() { return false;}
+	/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	Disable context menu on images by GreenLava Version 1.0
+	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+	    function nocontext(e) {
+	       return false;
+	    }
+	    document.oncontextmenu = nocontext;
+	//]]>
+	</script>
+    <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+    <link rel="pingback" href="https://sishengzhang.com/xmlrpc.php">
+<link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-cut-270x270.jpg" />
+    <style id="page-content-custom-styles">
+            </style>
+            <style data-name="header-shapes">
+            .header.color-overlay:after {background:url(https://sishengzhang.com/wp-content/themes/mesmerize/assets/images/header-shapes/circles.png) center center/ cover no-repeat}        </style>
+            <style data-name="background-content-colors">
+        .mesmerize-inner-page .page-content,
+        .mesmerize-inner-page .content,
+        .mesmerize-front-page.mesmerize-content-padding .page-content {
+            background-color: #F5FAFD;
+        }
+    </style>
+    </head>
+
+<body class="post-template-default single single-post postid-69 single-format-standard wp-custom-logo overlap-first-section unselectable mesmerize-inner-page">
+
+<div  id="page-top" class="header-top">
+		<div class="navigation-bar bordered"  data-sticky='0'  data-sticky-mobile='1'  data-sticky-to='top' >
+    <div class="navigation-wrapper">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu"><li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-166"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li id="menu-item-211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-211"><a href="https://sishengzhang.com/#contact">Contact</a></li>
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="https://sishengzhang.com/" class="logo-link dark" rel="home" itemprop="url"><img width="562" height="262" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg" class="logo dark" alt="" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature.jpg 562w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-signature-300x140.jpg 300w" sizes="(max-width: 562px) 100vw, 562px" /></a><a href="https://sishengzhang.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="1666" height="777" src="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png" class="custom-logo" alt="Sisheng Chris Zhang" itemprop="logo" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2.png 1666w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-300x140.png 300w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-768x358.png 768w, https://sishengzhang.com/wp-content/uploads/2018/08/cropped-Logo-Original-2-1024x478.png 1024w" sizes="(max-width: 1666px) 100vw, 1666px" /></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-31"><a href="https://sishengzhang.com/#page-top">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="https://sishengzhang.com/#about-1">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-166"><a href="https://sishengzhang.com/#cv">CV</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-34"><a href="https://sishengzhang.com/#latest-news-1">Latest-news</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-211"><a href="https://sishengzhang.com/#contact">Contact</a></li>
+</ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
+</div>
+</div>
+
+<div id="page" class="site">
+    <div class="header-wrapper">
+        <div  class='header  color-overlay  custom-mobile-image' style='; background-image:url(&quot;https://sishengzhang.com/wp-content/uploads/2018/08/article00.jpg&quot;); background-color:#6a73da' data-parallax-depth='20'>
+            								    <div class="inner-header-description gridContainer">
+        <div class="row header-description-row">
+    <div class="col-xs col-xs-12">
+        <h1 class="hero-title">
+            Is Rorty a Non-Ideal Theorist?        </h1>
+                    <p class="header-subtitle">张斯盛</p>
+            </div>
+        </div>
+    </div>
+        <script>
+        window.mesmerizeSetHeaderTopSpacing();
+    </script>
+                        </div>
+    </div>
+    <div class="content post-page">
+        <div class="gridContainer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="post-item">
+						<div id="post-69">
+
+    <div class="post-content-single">
+
+        <h2 class="h1">Is Rorty a Non-Ideal Theorist?</h2>
+        
+        
+
+<div class="post-meta muted">
+
+  <i class="font-icon-post fa fa-user"></i>
+  <a href="https://sishengzhang.com/author/vpchris/" title="Posts by Chris" rel="author">Chris</a>
+  &nbsp;&nbsp;<i class="font-icon-post fa fa-folder-o"></i>
+  <a href="https://sishengzhang.com/category/essay/" rel="category tag">Essay</a>
+  &nbsp;&nbsp;<i class="font-icon-post fa fa-calendar"></i>
+  <span class="post-date">10th August 2018</span>
+
+
+  &nbsp;|&nbsp;<i class="font-icon-post fa fa-comment-o"></i>
+  <span>0</span>
+</div>
+
+        <div class="post-content-inner">
+            
+            <img width="365" height="400" src="https://sishengzhang.com/wp-content/uploads/2018/08/article00.jpg" class="space-bottom-small space-bottom-xs wp-post-image" alt="" srcset="https://sishengzhang.com/wp-content/uploads/2018/08/article00.jpg 365w, https://sishengzhang.com/wp-content/uploads/2018/08/article00-274x300.jpg 274w" sizes="(max-width: 365px) 100vw, 365px" /><h5>Module Essay</h5>
+<h5>W.C.: 2,682/3,000</h5>
+<blockquote><p><strong>&nbsp;</strong></p></blockquote>
+<h5>31437 &#8211; Contemporary Political Philosophy</h5>
+<h5>Prof Santiago Zabala</h5>
+<h5>Sisheng Chris Zhang, Universitat Pompeu Fabra MA Political Philosophy</h5>
+<hr>
+<h2>Introduction</h2>
+<p>The pragmatism of Richard Rorty sparked much attention amongst philosophers. Rorty’s proposal is distinctive from many existing theories in philosophy as it does not require the presupposition (of the value) of truth. To be sure, Rorty rejects the notion of truth being a pre-determined conception that is waiting to be discovered by scientists and some philosophers<sup><a id="ffn1" class="footnote" href="#fn1">1</a></sup>. For Rorty, the conventional understanding of truth is <em>made</em>, rather than <em>found</em>, and has “take(n) hold of the imagination of Europe.”<sup><a id="ffn2" class="footnote" href="#fn2">2</a></sup>. A distinction between fact and the description of fact ought to be taken seriously. The notion of truth applies only to the language that humans have created, for example, the description of fact; while fact itself is independent from the descriptions that we ascribe. That is, only upon statements constructed by languages can we assess its truth values, but neither our assessment nor the statement itself relates to facts.</p>
+<p>In a similar vein, Rorty famously claims, “take care of freedom and truth will take care of itself”<sup><a id="ffn3" class="footnote" href="#fn3">3</a></sup>; this extrapolates his attitude towards truth. For Rorty, our deliberate pursuit of our truth is constrained by our language. What is ultimately important, for him, is what matters in reality. As truth, according to Rorty, is made by languages and by extension, its user; its social position, therefore, is much dictated by whom utters the statement.</p>
+<p>Though insightful and interesting, I find the Rortian account to be indifferent <em>in type</em> compared to the Rawlsian notion of the non-ideal theory. For Rawls, the non-ideal theory</p>
+<blockquote><p>“…asks how this long-term goal might be achieved, or worked toward, usually in gradual steps. It looks for policies and courses of action that are morally permissible and politically possible as well as likely to be effective… non-ideal theory presupposes that ideal theory is already on hand.”<sup><a id="ffn4" class="footnote" href="#fn4">4</a></sup><sup><a id="ffn5" class="footnote" href="#fn5">5</a></sup></p></blockquote>
+<p>At this point, it might be argued that the Rawlsian conceptions are unjustifiably deterministic, e.g., that non-ideal theory relies on (the existence) the ideal theory (which determines what it means to be ideal). But, as this essay argues, such interpretation (though reasonable), is not necessary nor sufficient. Moreover, in another equally reasonable conception of the non-ideal theory, Rortian theory is a coherent example of non-ideal theories.</p>
+<p>This essay proceeds in three steps. Firstly, I lay the groundwork by looking at the distinction between ideal/non-ideal theory according to Rawls and show how Rawls’s cannot escape from assumptions of truth. I explain how, for Rawls, is ideal integral to non-ideal. Then, I visit a free-standing non-ideal theory from Amartya Sen, which stands contrary to Rawls’s distinction. I show how Rorty’s theory<sup><a id="ffn6" class="footnote" href="#fn6">6</a></sup> does not align with either Rawls’s or Sen’s theories. Finally, I qualify my claim by looking at Laura Valentini’s three understandings of ideal/non-ideal theory and show Rorty’s theory encompasses characteristics from all distinct understandings qua Valentini’s. With three understandings taken altogether, I argue, Rorty’s theory is non-ideal in the Rawlsian sense as his theory leaves open for an ideal (e.g., Rawlsian).</p>
+<h2>Ideal or Non-Ideal Theory?</h2>
+<p>The distinction between ideal and non-ideal theory is attributed to John Rawls.</p>
+<p>According to Rawls, ideal theory:</p>
+<blockquote><p>“assumes strict compliance and works out the principles that characterise a well-ordered society under favourable circumstances”<sup><a id="ffn7" class="footnote" href="#fn7">7</a></sup></p></blockquote>
+<p>Recap on the definition of non-ideal theory, ideal theory, serves as a basis for non-ideal theory, as it already assumes that an ideal theory is “on-hand”<sup><a id="ffn8" class="footnote" href="#fn8">8</a></sup>. The ideal/non-ideal dissection between theories is by no means unproblematic<sup><a id="ffn9" class="footnote" href="#fn9">9</a></sup>. What is important for our discussion, however, is <em>not</em> so much whether the Rawlsian conception of ideal is, in fact, unproblematic. Rather, we examine whether Rawls’s ideal presupposes the any notion of truth.</p>
+<p>Firstly, we need to be clear about the Rawlsian strategy with <em>idealising</em> justice or, put plainly, the procedure in which does Rawls derive any ideal reasonably. One intuitive strategy is the Original Position (OP) and the Veil of Ignorance (VI) <sup><a id="ffn10" class="footnote" href="#fn10">10</a></sup>. Roughly, OP is a thought experiment that provokes us, behind the VI, what sort of system would we want to be born into. Here, the purpose of the VI is to: “exclude the knowledge of those contingencies which sets men at odds and allows them to be guided by their prejudices.”<sup><a id="ffn11" class="footnote" href="#fn11">11</a></sup>. Excluded knowledge, for example, includes one’s sex, race, and culture<sup><a id="ffn12" class="footnote" href="#fn12">12</a></sup>. For Rawls, a reasonable person will come to agree his two Principles of Justice (PJ) after deliberating in the OP<sup><a id="ffn13" class="footnote" href="#fn13">13</a></sup>, where the first principle is <em>lexically prior</em><sup><a id="ffn14" class="footnote" href="#fn14">14</a></sup> to the second. Here, we see Rawls’s focus on liberty and equality<sup><a id="ffn15" class="footnote" href="#fn15">15</a></sup>. Rawlsian theory also concerns the design of basic social institutions such that a just and stable<sup><a id="ffn16" class="footnote" href="#fn16">16</a></sup> society can be formed based on the PJs.</p>
+<p>So far, I have yet to discuss “truth” in Rawlsian theories. Nonetheless, it does seem that Rawls takes much for granted (e.g., that reasonable people <em>necessarily</em> comply with PJ, and/or their compliance is, in fact, <em>strict</em>). For Rortians, it could be argued that Rawlsian theory <em>requires</em> presuppositions of truth. For example, it is unclear what Rawls mean by “reasonable”, and by extension, whether its conception (whatever it may be) is indeed shared by other members of society<sup><a id="ffn17" class="footnote" href="#fn17">17</a></sup>. We might, therefore, be tempted to argue that Rawls is question-begging or is implicitly assuming truth to a certain extent.</p>
+<p>Rorty sees Rawls to be free from assuming a “‘philosophical foundations’ of liberalism”<sup><a id="ffn18" class="footnote" href="#fn18">18</a></sup> as Rawls claims to rejects a conception of justice “<em>not</em> being true to an order antecedent and given to us…”<sup><a id="ffn19" class="footnote" href="#fn19">19</a></sup>. To be sure, Rawls argues for procedural justice, the idea of which “is to design the social system so that the outcome is just whatever it happens to be, at least so long as it is within a certain range.”<sup><a id="ffn20" class="footnote" href="#fn20">20</a></sup> He distinguishes between perfect and imperfect procedural justice, where perfect justice encapsulates 1) “an independent criterion…defined separately from and prior to the procedure which is to be followed”, and 2) that “it is possible to devise a procedure that is sure to give the desired outcome.”<sup><a id="ffn21" class="footnote" href="#fn21">21</a></sup>; while imperfect procedural justice captures 1), but not 2). Rawls’s attempt, however, seems to be unsatisfactory to bracket all contributing factors to the ranking of principles: for <em>any</em> criterion, however independent, still hinges on individual preference<sup><a id="ffn22" class="footnote" href="#fn22">22</a></sup>. In addition, that “certain range” does not provide enough information can give rise to some pre-existing intuitions and values (e.g., truth) from people. If I am correct, then, procedural justice may still contain values that are arbitrary (e.g., truth)<sup><a id="ffn23" class="footnote" href="#fn23">23</a></sup>.</p>
+<p>One way to overcome these reservations about assumptions on truth is to discharge the notion of ideal, according to Sen,</p>
+<blockquote><p>“A transcendental approach is neither necessary nor sufficient for answering questions on the advancement of justice that urgently demand our attention, which call for a robustly comparative approach.<em>”</em><sup><a id="ffn24" class="footnote" href="#fn24">24</a></sup>.<sup><a id="ffn25" class="footnote" href="#fn25">25</a></sup></p></blockquote>
+<p>To clarify, a transcendental approach is not necessary as the mere existence of certain ideal does not entail people’s compliance, nor is it sufficient as it cannot guarantee a complete framework of justice<sup><a id="ffn26" class="footnote" href="#fn26">26</a></sup>. For Sen, a non-ideal theory is self-sufficient for we can rely on our intuitions while comparing between cases and judge which one is more just without requiring a pre-existing notion of justice. To tell which mountain is higher, knowing which mountain is the highest in the world (e.g., Mount Everest) does not help us to determine between the two mountains before us. Furthermore, we might add, a shared conception of “high” might not be necessary either, as long as we understand the criteria with which we are comparing against (e.g., height, rather than, say, width)<sup><a id="ffn27" class="footnote" href="#fn27">27</a></sup>. Sen’s non-ideal approach is alike act-utilitarianism where the decision to undertake any action rests on the judgment in every case (i.e., which action yields more utility/happiness). Act-utilitarianism stand in contrast with rule-utilitarianism where the preferred action is dictated by the rules (e.g., law). However, following act-utilitarianism might overlook the long-term benefits that we can otherwise preserve if we follow rule-utilitarianism. For example, speeding so that you can to the hospital early to see your injured family members trivialises traffic law for you; and when you break the traffic law more often, you are more likely to get harmed<sup><a id="ffn28" class="footnote" href="#fn28">28</a></sup>. Complying with rule, on the other hand, might yield great benefits in the long term at some cost in the short term.</p>
+<p>However, elsewhere for Rorty, our reliance on moral intuition merely <em>asserts</em> rather than explain what is “good”. Also, what we might derive from philosophy or logic as “good”, need not comply with what is <em>in fact</em> good. <sup><a id="ffn29" class="footnote" href="#fn29">29</a></sup> Sen’s theory, as we have seen, relies heavily on our intuitions. Therefore, Sen’s proposal of a free-standing non-ideal theory is incompatible with Rortian theory. Nevertheless, what I have shown in this section, is that the Rortian theory is neither <em>ideal</em> in the Rawlsian sense, nor is it <em>non-ideal</em> in Sen’s sense, which stand opposite of Rawlsian theory.</p>
+<h2>The In-Betweener</h2>
+<p>In this section, I will explore if there is ground in-between the two extreme positions<sup><a id="ffn30" class="footnote" href="#fn30">30</a></sup> that is able to accommodate Rortian thoughts. For Valentini, the distinction between ideal/non-ideal theory could be understood in three ways, respectively: 1. Full-compliance v. Partial-compliance; 2. Utopian/Idealistic v. Realistic; and 3. End-state v. Transitional<sup><a id="ffn31" class="footnote" href="#fn31">31</a></sup>. What I will show in this section, is while Rorty does not exclusively commit to any of these categories; but following Valentini, Rorty is prone be understood as non-ideal because his theory encompasses non-ideal characteristics from <em>all</em> distinctions of non-ideal.</p>
+<p>As we see previously, Rawlsian ideal theory assumes full/strict compliance. He believes that ideal theory is the ultimate values according to which we deal with social injustice. This perfectionist position is problematic, as I previously argued, as it can have footings on truth. For Rorty, that language is arbitrary makes the <em>nature of truth</em> (a formulation by language) a non-profitable topic for philosophical pursuit<sup><a id="ffn32" class="footnote" href="#fn32">32</a></sup>. Moreover, attempts to argue on the topic of nature requires language, that, as Rorty consistently argues, yield the process to be arbitrary. Recall, the physical existence of the world (e.g., fact), for Rorty, is independent of our description of it. The difference between Rawlsian and Rortian theory is that Rortian theory is not (at all) prescriptive<sup><a id="ffn33" class="footnote" href="#fn33">33</a></sup>. Put differently, for Rorty, people’s action is not determined by conceptions of justice agreed in society; people’s motivation for action, thus, is not prescribed by any conception of justice<sup><a id="ffn34" class="footnote" href="#fn34">34</a></sup>.<sup><a id="ffn35" class="footnote" href="#fn35">35</a></sup> However, Rorty’s theory <em>does</em> require partial compliance, as he “…urges us to think in terms of practices…”<sup><a id="ffn36" class="footnote" href="#fn36">36</a></sup>; even if a universalistic moral philosophy is impossible to be derived<sup><a id="ffn37" class="footnote" href="#fn37">37</a></sup>. That is, even though Rorty’s theory differs drastically from Rawls (namely of its lack of prescriptiveness), he nevertheless requires people’s attention be drawn, <em>necessarily</em>, to issues in practice; this yields Rorty’s theory partially compliant. In addition, Rorty’s exclusive focus on the reality affirms the component of <em>realistic</em> according to Valentini. However, we might, alike Rawlsian critics, question the extent to which Rorty’s theory is, <em>in fact</em>, considering all factors in reality<sup><a id="ffn38" class="footnote" href="#fn38">38</a></sup>. For example, in cases where people <em>genuinely</em> believe in a set of principles of justice that ought to be universally valid-should there be enough of these people-it seems that their principles ought to be taken seriously, regardless of its (lacking of) truth values. If Rorty’s concern is only in practice, then, he ought to take principles that people in reality <em>already</em> subscribe to seriously. This section concludes that Rorty’s theory is non-ideal in the first two of Valentini’s understandings.</p>
+<p>Regarding Valentini’s third distinction, the Ideal/Non-Ideal distinction could also be seen as “end-state and ‘transnational”<sup><a id="ffn39" class="footnote" href="#fn39">39</a></sup>. What this means for non-ideal theory is that it “asks how this long-term goal might be achieved, or worked toward, usually in gradual steps”<sup><a id="ffn40" class="footnote" href="#fn40">40</a></sup>. In contrast, a theory is end-state when it specifies how a society can be <em>fully</em> just<sup><a id="ffn41" class="footnote" href="#fn41">41</a></sup>. While Valentini broadly agrees with Sen’s argument that a end-state theory of justice is neither sufficient nor necessary, she also notes from Simmons that without an ideal theory, we cannot tell whether a certain unexplored action is permissible, nor can we know what counts as success<sup><a id="ffn42" class="footnote" href="#fn42">42</a></sup> (for justice). Valentini’s two points on Simmons can be applied to Rorty’s theory. Indeed, Rorty’s deliberate rejection of notions of truth disqualify any sort of ideal (theory), other than, say, freedom. What this means for Rorty is that there is no way in which we can tell we are moving in the “right” direction for sake of justice<sup><a id="ffn43" class="footnote" href="#fn43">43</a></sup><sup><a id="ffn44" class="footnote" href="#fn44">44</a></sup>. Now, Rortians would undoubtedly dispute that any “right” way for justice, again, relies on certain notions of truth (as such, becomes unappealing). Nevertheless, that there is no way at all for us to review our progress by following Rorty is alarming. We <em>might</em>, for example, extend Rorty’s focus of freedom onto an ideal of its own, e.g., freedom-maximisation; and thus be able to assess our progress by seeing the extent to which we have achieved freedom (e.g., as a society). But this move cannot be taken by Rortians as mere consideration of freedom as an ideal violates freedom itself as it tampers with procedural neutrality (e.g., when people engage in conversations without pre-determined goals in mind). Nevertheless, as argued above, Rorty argues against the reliance on our intuitions in matters of political morality. Though unclear, we might see nevertheless see Rorty’s theory not as far as Sen’s, but still being close to Sen’s than Rawls; for both of these theories see Rawlsian ideal neither necessary nor sufficient.</p>
+<h2>Conclusion</h2>
+<p>It is obviously arguable that <em>because</em> of Rorty’s rejection of pre-determined notions of truth that any attempts on mapping Rorty’s theory on the scale between ideal/non-ideal theory is futile. I disagree: while it is true that some philosophers take ideal for social justice to mean an exact collection of goods that we ought to pursue, there are many on-going disagreements with regard to, exactly, which type of goods is worthy of pursuit. Philosophers need not (and some have not, e.g., Rawls) take truth (and/or notions of) for granted; and by extension, formulate any theory of justice base on a particular conception of truth. An appeal to objectivism in moral theory need not entail any specific types of good (or pre-existing values including truth). Indeed, as Derek Parfit argues, utilitarianism, Scanlonian/Rawlsian Contractualism, and Kantianism could be combined into what he calls the Triple Theory (TT): “An act is wrong just when such acts are disallowed by some principle that is optimistic, uniquely universally willable, and not reasonably rejectable.”<sup><a id="ffn45" class="footnote" href="#fn45">45</a></sup>. TT appeals to more than mere people’s intuitions and necessarily provokes judgements that can yield conflicting outcomes, where to resolve them requires abandoning certain values of ours. That is, while it could be argued that TT still requires certain assessment based on people’s value, which might make it possible for people’s pre-existing values (including certain notions of truth that people subscribe to); but the mutually-conflicting nature of this trilemma is likely put all values under close scrutiny. In other words, <em>even if</em> people subscribe to certain notion of truth, their decision in their trilemma discharges pre-existing truths. I believe the TT consistently answers to Rorty’s worry on the arbitrariness of language; as some of our sensations, from, say, Kantianism, does not require language to aid our own understanding. Note, however, this essay is no place to ground Parfit’s TT. I merely invoke TT to show that a theory of morality is possible without relying on truth that exists prior to deliberation of any sort.</p>
+<p>This essay argues that Rorty’s theory can be considered as an example of Rawlsian Non-Ideal theory. Firstly, I laid out two extreme positions in the ideal/non-ideal debate: Rawls and Sen’s. For Rawls, ideal theory serves as the basis for non-ideal, and specifies the contents of justice; while for Sen, ideal theory is neither sufficient nor necessary for a plausible account of non-ideal theory. As I showed in this essay, Rorty’s theory is neither of these positions. However, as I also showed, Rorty’s theory remarkably resembles characteristics of non-ideal theory from all three understandings of Valentini on non-ideal theories. As I argue Rorty’s theory cannot be Sen’s, this means that Rorty’s theory resides between Rawls’s ideal and Sen’s non-ideal theory. Before end, I also elicit a possible moral theory that can serve as an ideal for Rorty.</p>
+<ol id="footnotes">
+<li id="fn1">Rorty, Richard. 1989. Contingency, Irony, and Solidarity. Cambridge University Press, 3 <a href="#ffn1">↩</a></li>
+<li id="fn2">Ibid. <a href="#ffn2">↩</a></li>
+<li id="fn3"><em>Contingency, Irony, and Solidarity</em>, op. cit., 120; Rorty, Richard, and Eduardo Mendieta. 2006. Take Care of Freedom and Truth Will Take Care of Itself. Stanford University Press. <a href="#ffn3">↩</a></li>
+<li id="fn4">Rawls, John. 2001. The Law of Peoples. Harvard University Press, 89-90 <a href="#ffn4">↩</a></li>
+<li id="fn5">At this point, a helpful way to understand Rorty’s theory is to see his ideal as freedom. But I shall discharge this understanding later in this essay. <a href="#ffn5">↩</a></li>
+<li id="fn6">Rorty in many occasions rejects the label of philosopher put to him and use theorist instead. E.g., <em>Take Care of Freedom and Truth Will Take Care of Itself</em>. This essay takes no side on the taxonomy of Rorty’s thoughts. Different usages of theory, such as “Rortian theory”, only denotes the collective of his thoughts whenever applies. <a href="#ffn6">↩</a></li>
+<li id="fn7">Rawls, John. 2009. A Theory of Justice. Harvard University Press, 216 <a href="#ffn7">↩</a></li>
+<li id="fn8">To be sure, in the 2009 edition of <em>A Theory of Justice</em>, Rawls believes non-ideal theory “is worked out after an ideal conception of justice is chosen; only then do the parties ask which principles to adopt under less happy condition.” This definition, though similar, has no direct bearing on the ideal theory. Ibid. This definition asserts my conclusion to a large extent, as such, it will not be discussed in this essay. <a href="#ffn8">↩</a></li>
+<li id="fn9">Critics have argued that the Rawls distinction between the ideal and non-ideal theory is unclear; e.g., A. J. Simmons. Nonetheless, for Simmons, he concludes that the ideal/non-ideal distinction that should not be the target of criticism; rather, criticisms should target the Rawlsian perspective of justice (that it is overly forward-looking): Simmons, A John. 2010. “Ideal and Nonideal Theory.” Philosophy &amp; Public Affairs 38(1): 5–36, 32-33 <a href="#ffn9">↩</a></li>
+<li id="fn10">Rawls, John. 1971. A Theory of Justice. Harvard University Press, ch. 3 <a href="#ffn10">↩</a></li>
+<li id="fn11">Ibid., 19 <a href="#ffn11">↩</a></li>
+<li id="fn12">Ibid., 99 <a href="#ffn12">↩</a></li>
+<li id="fn13">1. Each person has the same indefeasible claim to a fully adequate scheme of equal basic liberties, which scheme is compatible with the same scheme of liberties for all; and 2. Social and economic inequalities are to satisfy two conditions: first, they are to be attached to offices and positions open to all under conditions of fair equality of opportunity; and second, they are to be to the greatest benefit of the least-advantaged members of society(the difference principle). Rawls, John, and Erin Kelly. 2001. Justice as Fairness. Harvard University Press, 42-43; See also, <em>A Theory of Justice</em>. 1971. op. cit., 61-62 <a href="#ffn13">↩</a></li>
+<li id="fn14">This, for Rawls, mean that we ought to “A principle does not come into play until those previous to it are either fully met or do not come into play until those previous to it are either fully met or do not apply.” A lexical ordering, for Rawls, means that we do not need to balance difference principle at any given time. <em>A Theory of Justice</em>. 1971. op. cit., 43 <a href="#ffn14">↩</a></li>
+<li id="fn15">According to Thomas Pogge, however, the difference principle does not specify whether we should consider one’s life in its entirety or at any given moment in assessment; neither does it take into considerations of different societal arrangements. Pogge, Thomas Winfried Menko, and Michelle Kosch. 2007. John Rawls. Oxford University Press on Demand, 110-115 <a href="#ffn15">↩</a></li>
+<li id="fn16">For Rawls, “The kind of stability required of justice as fairness is based, then, on its being a liberal political view, one that aims to be acceptable to citizens as reasonable and rational, as well as free and equal, and so as addressed to their public reason.” <em>Justice as Fairness</em>, op cit., 185 <a href="#ffn16">↩</a></li>
+<li id="fn17">See, for example, <em>A Theory of Justice</em>. 1971. op cit., 31: The principles of right, and so of justice, put limits on which satisfactions have value; they impose restrictions on what are reasonable conceptions of one&#8217;s good. <a href="#ffn17">↩</a></li>
+<li id="fn18"><em>Contingency, Irony, and Solidarity</em>, op. cit., 57 <a href="#ffn18">↩</a></li>
+<li id="fn19">Ibid., 58. Emphasis added. <a href="#ffn19">↩</a></li>
+<li id="fn20"><em>A Theory of Justice</em>. 1971. op. cit., 85. <a href="#ffn20">↩</a></li>
+<li id="fn21">Ibid. <a href="#ffn21">↩</a></li>
+<li id="fn22">For example, one may subscribe to different values that are not always consistent, e.g., utility-maximisation v. paternalism. <a href="#ffn22">↩</a></li>
+<li id="fn23">In fact, Rorty argues against Rawls that the reliance of a “better argument” requires “a natural, transcultural relation of relevance, which connects propositions with one another so as to form something like Descartes’s “natural order of reasons. Dieleman, Susan, David Rondel, and Christopher Voparil. 2017. Pragmatism and Justice. Oxford University Press, 30, 33 <a href="#ffn23">↩</a></li>
+<li id="fn24">Sen, Amartya Kumar. 2006. “What Do We Want From a Theory of Justice?.” Journal of Philosophy 103(5): 215–38, 237 <a href="#ffn24">↩</a></li>
+<li id="fn25">For him, the transcendental approach to justice focuses “on identifying perfectly just societal arrangements”, which stand in contrast with “comparative approach (which) concentrate instead on ranking alternative societal arrangements, rather than focusing exclusively, or at-all-on the identification of a full just society.” Ibid., 216 <a href="#ffn25">↩</a></li>
+<li id="fn26">For example, a transcendental approach might merely provide us with guiding principles that can derive further principles that, taken altogether, be considered as a <em>complete system of justice</em>. A complete justice framework is essential to ensure that justice is a coherent and consistent ideal applicable to all situations. <a href="#ffn26">↩</a></li>
+<li id="fn27">Suppose other person does not speak our language (e.g., English). It might still be fairly easy to describe the conception of height/high to this person such that we can still have the discussion on the height comparison between two mountains. <a href="#ffn27">↩</a></li>
+<li id="fn28">Note: the influence of one’s law-breaking often result in collateral damage as well. The decline of utility of other people ought to cast a difference in a consequentialist calculation. <a href="#ffn28">↩</a></li>
+<li id="fn29">Rorty, Richard. 2009. Philosophy and the Mirror of Nature. Princeton University Press, 306-309 <a href="#ffn29">↩</a></li>
+<li id="fn30">That, the Rawlsian ideal theory and Sen’s non-ideal theory are free-standing (independent in its own rights). <a href="#ffn30">↩</a></li>
+<li id="fn31">Valentini, Laura. 2012. “Ideal vs. Non-Ideal Theory: a Conceptual Map.” Philosophy Compass 7(9): 654–64, 654 <a href="#ffn31">↩</a></li>
+<li id="fn32"><em>Contingency, Irony, and Solidarity</em>, op. cit., 9 <a href="#ffn32">↩</a></li>
+<li id="fn33">E.g., “…I don’t think we need a ‘supreme ethics principle’, any more than we need to ask whether we have a pre-reflective and presentient set of responses to others’ pains. I do not see the point of delving down to the roots of the difference between people who care about others’ suffering and those who don’t.” Critchley, Simon, Jacques Derrida, Ernesto Laclau, and Richard Rorty. 2003. Deconstruction and Pragmatism. Routledge, 44 <a href="#ffn33">↩</a></li>
+<li id="fn34">To be sure, I have <em>not</em> argued against Rawlsian ideal theory (and its plausibility). But merely that the Rortian account does not require a stringent account like Rawls’s. <a href="#ffn34">↩</a></li>
+<li id="fn35">E.g., “Instead of appealing to a commensurating principle to settle conflicting claims, Rorty’s understanding of normativity locates norms and standards within social practices and the web of communal relations in which we find ourselves.” <em>Pragmatism and Justice</em>, op. cit., 76 <a href="#ffn35">↩</a></li>
+<li id="fn36"><em>Deconstruction and Pragmatism</em>, op cit., 6 <a href="#ffn36">↩</a></li>
+<li id="fn37">Ibid., 4 <a href="#ffn37">↩</a></li>
+<li id="fn38"><em>Ideal vs. Non-Ideal Theory</em>, op cit., 656-658 <a href="#ffn38">↩</a></li>
+<li id="fn39">Ibid., 660 <a href="#ffn39">↩</a></li>
+<li id="fn40">Ibid. <a href="#ffn40">↩</a></li>
+<li id="fn41">Ibid., 661, original emphasis. <a href="#ffn41">↩</a></li>
+<li id="fn42">Ibid. <a href="#ffn42">↩</a></li>
+<li id="fn43">Other than, say, that we have more freedom. But whether a society that has more freedom is “good” or “better” requires value judgements that can only be relied upon external arguments, thus requiring pre-existing ideas, (e.g., truth). <a href="#ffn43">↩</a></li>
+<li id="fn44">To be sure, one value that Rortians can aspire to is solidarity. This move, however, requires the value of solidarity to be accepted amongst people. I think, Rortians cannot give a convincing answer without appealing to some sort of truth. I owe this point to Reinier Hoon. <a href="#ffn44">↩</a></li>
+<li id="fn45">Parfit, Derek, and Samuel Scheffler. 2013. On What Matters I. Oxford University Press, 413 <a href="#ffn45">↩</a></li>
+</ol>
+
+
+
+
+
+
+        </div>
+        
+        <p class="tags-list"><i data-cp-fa="true" class="font-icon-25 fa fa-tags"></i>&nbsp;<a href="https://sishengzhang.com/tag/rorty/" rel="tag">Rorty</a></p>
+    </div>
+    
+    
+    
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://sishengzhang.com/2018/08/09/general-questions/" rel="prev"><i class="font-icon-post fa fa-angle-double-left"></i><span class="meta-nav" aria-hidden="true">Previous:</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">General Questions</span></a></div><div class="nav-next"><a href="https://sishengzhang.com/2018/08/10/a-shareholder-approach-to-intergenerational-justice/" rel="next"><span class="meta-nav" aria-hidden="true">Next:</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">A Shareholder Approach to Intergenerational Justice</span><i class="font-icon-post fa fa-angle-double-right"></i></a></div></div>
+	</nav>
+</div>
+                    </div>
+                </div>
+				            </div>
+        </div>
+
+    </div>
+<br>
+
+<p style='text-align:center;padding-left:20px;'>&#169; Sisheng Chris Zhang <br>本站最终解释权归Sisheng Chris Zhang所有
+
+<br> SishengZhang.com | Vpchris.com | CZhang.uk
+
+<br><br> 
+
+
+	</div>
+	<div id="wpcp-error-message" class="msgmsg-box-wpcp warning-wpcp hideme"><span>error: </span>Content is protected !!</div>
+	<script>
+	var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: </span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	</script>
+	<style type="text/css">
+	#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border-radius: 10px;
+		color: #555;
+		font-family: Tahoma;
+		font-size: 11px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+	}
+	.msgmsg-box-wpcp span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	.error-wpcp {		background:#ffecec url('https://sishengzhang.com/wp-content/plugins/wp-content-copy-protector/images/error.png') no-repeat 10px 50%;
+		border:1px solid #f5aca6;
+	}
+	.success {
+		background:#e9ffd9 url('https://sishengzhang.com/wp-content/plugins/wp-content-copy-protector/images/success.png') no-repeat 10px 50%;
+		border:1px solid #a6ca8a;
+	}
+	.warning-wpcp {
+		background:#ffecec url('https://sishengzhang.com/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+		border:1px solid #f5aca6;
+	}
+	.notice {
+		background:#e3f7fc url('https://sishengzhang.com/wp-content/plugins/wp-content-copy-protector/images/notice.png') no-repeat 10px 50%;
+		border:1px solid #8ed9f6;
+	}
+    </style>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.61'></script>
+<script type='text/javascript'  defer="defer" src='https://sishengzhang.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+</body>
+</html>

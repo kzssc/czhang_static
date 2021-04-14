@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Admin &#8211; Sisheng Chris Zhang</title>
+	<atom:link href="http://czhang/category/admin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://sishengzhang.com/</link>
+	<description>An-Ever Philosophising Technophile</description>
+	<lastBuildDate>Thu, 18 Apr 2019 02:27:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>https://sishengzhang.com/wp-content/uploads/2019/04/cropped-Logo-cut-32x32.jpg</url>
+	<title>Admin &#8211; Sisheng Chris Zhang</title>
+	<link>https://sishengzhang.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Getting Political Philosophy Books</title>
+		<link>https://sishengzhang.com/2019/04/18/getting-political-philosophy-books/</link>
+		
+		<dc:creator><![CDATA[C.Zhang]]></dc:creator>
+		<pubDate>Thu, 18 Apr 2019 01:21:45 +0000</pubDate>
+				<category><![CDATA[Admin]]></category>
+		<guid isPermaLink="false">https://sishengzhang.com/?p=98</guid>
+
+					<description><![CDATA[I can help you (to the best of my ability) to get access to political philosophy books. Couple caveats: Sometimes books are not free, I will have to pay some money too. I don’t mind paying for you first, but you have to pay me back later. Trust is important.<a class="moretag" href="https://sishengzhang.com/2019/04/18/getting-political-philosophy-books/"> Read more&#8230;</a>]]></description>
+										<content:encoded><![CDATA[
+<p><strong>I can help you (to the best of my ability) to get access to political philosophy books. </strong></p>
+
+
+
+<p>Couple caveats:</p>
+
+
+
+<ol><li>Sometimes books are not free, I will have to pay some money too. I don’t  mind paying for you first, but you have to pay me back later. Trust is important. </li><li>I don’t make money on this. </li><li>You can use it for journal articles unless you cannot get it using 1) university log-in; 2) sci-hub.  (If I get access using either of this method you’ll be banned for good). </li><li>I will get you the PDF of the book (no hard-copy what-not). </li><li>Turnaround is normally 24 hour, but I make no promise. </li><li>You can submit in but, but one-book-per-line, please. </li><li>Format: Book name (space) author (e.g., Morality of Freedom Joseph Raz)<br></li></ol>
+
+
+
+<p>Once you have read (and agree) with all these terms, click here: <a href="http://sishengzhang.mikecrm.com/ICNVUEZ">book</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

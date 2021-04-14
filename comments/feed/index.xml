@@ -11,11 +11,7 @@
 	<atom:link href="http://czhang/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://sishengzhang.com/</link>
 	<description>An-Ever Philosophising Technophile</description>
-<<<<<<< HEAD
-	<lastBuildDate>Wed, 14 Apr 2021 17:33:08 +0000</lastBuildDate>
-=======
-	<lastBuildDate>Wed, 17 Mar 2021 15:20:25 +0000</lastBuildDate>
->>>>>>> parent of bffc684 (20210320)
+	<lastBuildDate>Sat, 20 Mar 2021 12:39:25 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
