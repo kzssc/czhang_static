@@ -79,12 +79,20 @@ const RapidWeaverBadgeTemplate=document.createElement('template');RapidWeaverBad
     <slot></slot>
   </div>
 </div>
-`;class RapidWeaverBadge extends HTMLElement{$badge;$badgeContent;$defaults={positionX:'left',positionY:'bottom',mode:'auto',transition:'slide',delayType:'time',delay:1000,url:null,target:'_self',}
+`;class RapidWeaverBadge extends HTMLElement{$badge;$badgeContent;$defaults={positionX:'left',positionY:'bottom',mode:'auto',transition:'slide',delayType:'time',delay:1000,url:null,target:'_self',hideOn:null}
 constructor(){super();this.attachShadow({mode:'open'});}
 connectedCallback(){this.shadowRoot.appendChild(RapidWeaverBadgeTemplate.content.cloneNode(true));this.$badge=this.shadowRoot.getElementById('rapidweaverBadge')
 this.$badgeContent=this.shadowRoot.getElementById('rapidweaverBadgeContent')
 if(this.url&&this.url!==''){this.addLink();}
-this.addTransitions();this.setPosition();this.setTheme();window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>this.setTheme());}
+this.addTransitions();this.setPosition();this.setTheme();this.addHiddenStyles();window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>this.setTheme());}
+addHiddenStyles(){const styleNode=Array.from(this.shadowRoot.childNodes).filter(childNode=>childNode.nodeName==='STYLE');if(Array.isArray(this.hideWhen)){this.hideWhen.forEach(hideWhen=>{styleNode[0].innerHTML+=`
+          @media ${hideWhen} {
+            #rapidweaverBadge {
+              display: none !important;
+              visibility: hidden !important;
+            }
+          }
+        `;});}}
 addLink(){const link=document.createElement('a');link.href=this.url;link.id="rapidweaverBadgeContent";link.target=this.target;link.innerHTML=this.$badgeContent.innerHTML;this.$badge.innerHTML='';this.$badge.appendChild(link);return link;}
 addTransitions(){if(this.transition==='none'||!this.transition||!this.delayType){return;}
 this.$badge.classList.add(this.transitionClasses);if(this.delayType==='time'){setTimeout(()=>{this.$badge.classList.remove(this.transitionClasses);},this.delay);}
@@ -108,5 +116,6 @@ get positionY(){const positionY=this.getAttribute("position-y");if(['top','botto
 return!positionY?this.$defaults.positionY:positionY;}
 get mode(){const mode=this.getAttribute("mode");if(['auto','light','dark'].indexOf(mode)===-1){return this.$defaults.mode;}
 return!mode?this.$defaults.mode:mode;}
-get target(){const target=this.getAttribute("target");return!target?this.$defaults.target:target;}}
+get target(){const target=this.getAttribute("target");return!target?this.$defaults.target:target;}
+get hideWhen(){const hideWhen=this.getAttribute("hide-when");return!hideWhen?this.$defaults.hideWhen:hideWhen.split(',');}}
 window.customElements.define('rapidweaver-badge',RapidWeaverBadge);
