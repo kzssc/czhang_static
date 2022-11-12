@@ -79,8 +79,7 @@ const RapidWeaverBadgeTemplate=document.createElement('template');RapidWeaverBad
     <slot></slot>
   </div>
 </div>
-`;class RapidWeaverBadge extends HTMLElement{$badge;$badgeContent;$defaults={positionX:'left',positionY:'bottom',mode:'auto',transition:'slide',delayType:'time',delay:1000,url:null,target:'_self',hideOn:null}
-constructor(){super();this.attachShadow({mode:'open'});}
+`;class RapidWeaverBadge extends HTMLElement{$badge;$badgeContent;$defaults={positionX:'left',positionY:'bottom',mode:'auto',transition:'slide',delayType:'time',delay:1000,url:null,target:'_self',hideOn:null};constructor(){super();this.attachShadow({mode:'open'});}
 connectedCallback(){this.shadowRoot.appendChild(RapidWeaverBadgeTemplate.content.cloneNode(true));this.$badge=this.shadowRoot.getElementById('rapidweaverBadge')
 this.$badgeContent=this.shadowRoot.getElementById('rapidweaverBadgeContent')
 if(this.url&&this.url!==''){this.addLink();}
