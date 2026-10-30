@@ -62,11 +62,12 @@
     var s = document.createElement("script");
     s.src = "https://client.crisp.chat/l.js";
     s.async = true;
-    s.onerror = function () {
-      loaded = false;
-      document.getElementById("chat-note").textContent =
-        "The chat could not load. Try again shortly, or book a meeting instead.";
-    };
+    s.onerror = function () { loaded = false; };
     document.head.appendChild(s);
   });
+
+  // Photo popup
+  var dlg = document.getElementById("cats-dialog");
+  document.getElementById("open-cats").addEventListener("click", function () { dlg.showModal(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
 })();
