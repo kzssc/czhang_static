@@ -49,6 +49,10 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") setMenu(false);
   });
+  document.querySelector(".nav__brand").addEventListener("click", function () { setMenu(false); });
+  window.matchMedia("(min-width: 768px)").addEventListener("change", function (e) {
+    if (e.matches) setMenu(false);
+  });
 
   // Crisp loads only after a visitor asks to chat, so no chat cookies are set before that.
   var chatBtn = document.getElementById("open-chat");
