@@ -24,6 +24,7 @@
   <link rel="icon" type="image/png" sizes="64x64" href="../resources/favicon_large.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../resources/Logo%20cut.png">
 
+  <script>try{var t=localStorage.getItem("theme"),r=document.documentElement;if(t==="light"||t==="dark")r.dataset.theme=t;else if(t==="system")r.dataset.theme=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}catch(e){}</script>
   <link rel="preload" href="../fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/phosphor.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -44,6 +45,13 @@
         <li><a href="#contact">合作</a></li>
       </ul>
       <a class="nav__lang" href="../" lang="en-GB" hreflang="en-GB">English</a>
+      <label class="theme"><span class="sr-only">主题</span>
+        <select id="theme-select">
+          <option value="dark">深色</option>
+          <option value="light">浅色</option>
+          <option value="system">跟随系统</option>
+        </select>
+      </label>
     </nav>
   </header>
 

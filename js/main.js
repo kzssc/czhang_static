@@ -71,4 +71,28 @@
   var dlg = document.getElementById("cats-dialog");
   document.getElementById("open-cats").addEventListener("click", function () { dlg.showModal(); });
   dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+
+  // Theme: dark by default; the visitor can choose light or follow the system
+  var themeSelect = document.getElementById("theme-select");
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var systemLight = window.matchMedia("(prefers-color-scheme: light)");
+  function currentChoice() {
+    try { return localStorage.getItem("theme") || "dark"; } catch (e) { return "dark"; }
+  }
+  function applyTheme(choice) {
+    var resolved = choice === "system" ? (systemLight.matches ? "light" : "dark") : choice;
+    document.documentElement.dataset.theme = resolved;
+    if (themeMeta) themeMeta.setAttribute("content", resolved === "light" ? "#ffffff" : "#000000");
+  }
+  if (themeSelect) {
+    themeSelect.value = currentChoice();
+    applyTheme(themeSelect.value);
+    themeSelect.addEventListener("change", function () {
+      try { localStorage.setItem("theme", themeSelect.value); } catch (e) {}
+      applyTheme(themeSelect.value);
+    });
+    systemLight.addEventListener("change", function () {
+      if (currentChoice() === "system") applyTheme("system");
+    });
+  }
 })();
