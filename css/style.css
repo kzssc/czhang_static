@@ -565,3 +565,10 @@ body::before {
 .lightbox__close:hover { background: var(--surface-4); }
 .lightbox__close:active { transform: scale(0.98); }
 @keyframes lightbox-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+/* Chinese edition: Geist has no Han glyphs, so fall back to the system CJK sans */
+:lang(zh) { --font: "Geist", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", ui-sans-serif, sans-serif; }
+:lang(zh) h1, :lang(zh) h2 { letter-spacing: 0; }
+:lang(zh) body, body:lang(zh) { line-height: 1.75rem; }
+:lang(zh) .eyebrow, :lang(zh) .section__label { letter-spacing: 0.02em; }
+:lang(zh) .list h3 { letter-spacing: 0; }

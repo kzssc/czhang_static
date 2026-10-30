@@ -57,6 +57,7 @@
     if (loaded) { window.$crisp.push(["do", "chat:open"]); return; }
     loaded = true;
     window.$crisp = [];
+    if (document.documentElement.lang.indexOf("zh") === 0) window.CRISP_RUNTIME_CONFIG = { locale: "zh" };
     window.CRISP_WEBSITE_ID = "83f11913-04ec-4c38-91c4-8bbe0867116e";
     window.CRISP_READY_TRIGGER = function () { window.$crisp.push(["do", "chat:open"]); };
     var s = document.createElement("script");
