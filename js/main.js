@@ -72,24 +72,35 @@
   document.getElementById("open-cats").addEventListener("click", function () { dlg.showModal(); });
   dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
 
-  // Theme: dark by default; the visitor can choose light or follow the system
-  var themeSelect = document.getElementById("theme-select");
+  // Theme: dark by default; the button cycles dark, light, system
+  var themeBtn = document.getElementById("theme-toggle");
   var themeMeta = document.querySelector('meta[name="theme-color"]');
   var systemLight = window.matchMedia("(prefers-color-scheme: light)");
+  var ORDER = ["dark", "light", "system"];
+  var ICONS = { dark: "ph-moon", light: "ph-sun", system: "ph-desktop" };
   function currentChoice() {
-    try { return localStorage.getItem("theme") || "dark"; } catch (e) { return "dark"; }
+    try {
+      var c = localStorage.getItem("theme");
+      return ORDER.indexOf(c) > -1 ? c : "dark";
+    } catch (e) { return "dark"; }
   }
   function applyTheme(choice) {
     var resolved = choice === "system" ? (systemLight.matches ? "light" : "dark") : choice;
     document.documentElement.dataset.theme = resolved;
     if (themeMeta) themeMeta.setAttribute("content", resolved === "light" ? "#ffffff" : "#000000");
+    if (themeBtn) {
+      var name = themeBtn.dataset[choice];
+      themeBtn.querySelector("i").className = "ph " + ICONS[choice];
+      themeBtn.setAttribute("aria-label", themeBtn.dataset.label + ": " + name);
+      themeBtn.title = themeBtn.dataset.label + ": " + name;
+    }
   }
-  if (themeSelect) {
-    themeSelect.value = currentChoice();
-    applyTheme(themeSelect.value);
-    themeSelect.addEventListener("change", function () {
-      try { localStorage.setItem("theme", themeSelect.value); } catch (e) {}
-      applyTheme(themeSelect.value);
+  if (themeBtn) {
+    applyTheme(currentChoice());
+    themeBtn.addEventListener("click", function () {
+      var next = ORDER[(ORDER.indexOf(currentChoice()) + 1) % ORDER.length];
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      applyTheme(next);
     });
     systemLight.addEventListener("change", function () {
       if (currentChoice() === "system") applyTheme("system");

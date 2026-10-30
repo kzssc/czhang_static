@@ -614,25 +614,21 @@ html[data-theme="light"] {
 }
 html[data-theme="light"]:lang(zh) { --accent: #b8442b; }
 
-/* Theme selector */
-.theme { display: block; }
-.theme select {
-  appearance: none;
-  -webkit-appearance: none;
-  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-4);
+/* Theme toggle: icon only, cycles dark, light, system */
+.theme {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   border: 0;
   border-radius: var(--r-lg);
-  background-color: var(--surface-3);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%239b9b9b' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
+  background: var(--surface-3);
   color: var(--text);
-  font: inherit;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
+  font-size: 1.25rem;
   cursor: pointer;
-  transition: background-color 300ms var(--ease);
+  transition: background-color 300ms var(--ease), color 300ms var(--ease), transform 500ms var(--ease);
 }
-.theme select:hover { background-color: var(--surface-4); }
+.theme:hover { background: var(--surface-4); color: var(--accent); }
+.theme:active { transform: scale(0.98); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
