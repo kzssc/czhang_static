@@ -559,10 +559,24 @@ body::before {
   .nav__panel { display: flex; align-items: center; gap: var(--s-6); }
 }
 
+/* Opening sequence: pure CSS, so nothing flashes before a script runs */
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes drop { from { opacity: 0; translate: 0 -16px; } to { opacity: 1; translate: 0 0; } }
+@keyframes settle { from { opacity: 0; transform: scale(1.06); } to { opacity: 1; transform: none; } }
+
+.nav { animation: drop 900ms var(--ease) 1000ms both; }
+.hero__photo { animation: settle 1800ms var(--ease) both; }
+.hero__inner > * { animation: rise 900ms var(--ease) both; }
+.hero__inner > :nth-child(1) { animation-delay: 200ms; }
+.hero__inner > :nth-child(2) { animation-delay: 350ms; }
+.hero__inner > :nth-child(3) { animation-delay: 550ms; }
+.hero__inner > :nth-child(4) { animation-delay: 750ms; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 1ms !important; transition-delay: 0s !important; }
   .reveal { transform: none; }
+  .nav, .hero__photo, .hero__inner > * { animation: none; }
 }
 
 .link-quiet--spaced { margin-top: var(--s-4); color: var(--accent); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
