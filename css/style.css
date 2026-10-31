@@ -576,7 +576,11 @@ body::before {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 1ms !important; transition-delay: 0s !important; }
   .reveal { transform: none; }
-  .nav, .hero__photo, .hero__inner > * { animation: none; }
+  /* Keep the opening as a plain fade: no movement or zoom */
+  @keyframes rise { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes drop { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes settle { from { opacity: 0; } to { opacity: 1; } }
+  .nav, .hero__photo, .hero__inner > * { animation-duration: 900ms; }
 }
 
 .link-quiet--spaced { margin-top: var(--s-4); color: var(--accent); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
